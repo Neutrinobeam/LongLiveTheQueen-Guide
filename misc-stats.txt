@@ -1,0 +1,22 @@
+Miscellaneous Stats
+
+Cruelty (K)
+Increases as Elodie commits cruel acts: unjust imprisonments, executions, taunting prisoners, etc.
+Initial value: 0
+
+Lassi (G)
+Amount of money available in the treasury.
+Technically non-deterministic as a random amount between 0.1 and 0.50 (uniform distribution, closed interval) is deducted each week after Elodie attends classes. This effect is too small to really effect the story.
+Initial Value: 10000
+
+Commoner Approval (Ca)
+Reflects Elodie's actions towards the peasants, particularly her servant Alice.
+Initial Value: 0
+
+Noble Approval (Na)
+Reflects Elodie's actions towards the nobility, both within and beyond Nova.
+Initial Value: 0
+
+Army Size (R)
+The number of forces loyal to the Crown.
+Initial Value: 12000
