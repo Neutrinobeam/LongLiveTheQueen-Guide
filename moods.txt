@@ -1,0 +1,28 @@
+# Moods
+Elodie's mood is determined by five axes which are measured by nine variables: I, A, F, C, D, W, Y, P, L. Possible moods are 'Injured', 'Angry', 'Afraid', 'Cheerful', 'Depressed', 'Willful', 'Yielding', 'Pressured', 'Lonely', 'Neutral'.
+
+All of the axes and variables are integer valued, but the first axis and I variable act uniquely. Both are limited to [0, 1] and if I is 1, it overrides the usual behavior and makes Elodie's mood 'Injured'.
+
+The other axes exist in [-5, 5] and Elodie's mood matches the sign of whichever axis has the greatest absolute value. If multiple axes have values equal to the maximum, the one whose variables appear first in the list above has prescedence. If all axes are 0, Elodie's mood is 'Neutral'
+
+Each pair of variables (excluding I) measures one axis, in order, with the first being the axis value and the second being its negation, thus the axes being [1, 1, 1, 1, 1] implies I = 1, A = 1, F = -1, C = 1, D = -1, W = 1, Y = -1, P = 1, L = -1. The axes are presented in terms of their positive variables for clarity, [0, -2, 3, 0, 1] is written as '2F3CP'.
+
+# Mood Offsets
+Mood offsets have similar presentation to moods (see the readme.) They act as an offset, mood_after = mood_before + mood_offset using standard vector addition and enforcement of the restricted domain [0,1] x [-5, 5]^4 through clamping.
+
+One important caveat this that negative offsets have no effect below zero, so 'F' + '-2F' = '' (zero) while 'F' + '2A' = 'A', it may be a surprise that  'A' + '-2F' = 'A'.
+
+# Inital Value
+Elodie's inital mood is 'Depressed' from axes '2F4D'.
+
+Examples
+    A2D -> mood = 'Depressed', I = 0, A = 1, F = -1, C = -2, D = 2, W = 0, Y = 0, P = 0, L = 0
+    FCYL -> mood = 'Afraid', I = 0, A = -1, F = 1, C = 1, D = -1, W = -1, Y = 1, P = -1, L = 1
+    I2A4CP -> mood = 'Injured', I = 1, A = 2, F = -2, C = 4, D = -4, W = 0, Y = 0, P = 1, L = -1
+    2D3Y3P -> mood = 'Yielding', I = 0, A = 0, F = 0, C = -2, D = -2, W = -3, Y = 3, P = 3, L = -3
+    
+    A2WL + A -> 2A2WL
+    A2WL + -A -> 2WL
+    A2WL + F -> 2WL
+    A2WL + -F -> A2WL
+    A2WL + D2YP -> AD
