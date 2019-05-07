@@ -7,10 +7,13 @@ The other axes exist in [-5, 5] and Elodie's mood matches the sign of whichever 
 
 Each pair of variables (excluding I) measures one axis, in order, with the first being the axis value and the second being its negation, thus the axes being [1, 1, 1, 1, 1] implies I = 1, A = 1, F = -1, C = 1, D = -1, W = 1, Y = -1, P = 1, L = -1. The axes are presented in terms of their positive variables for clarity, [0, -2, 3, 0, 1] is written as '2F3CP'.
 
-Mood Offsets
-Mood offsets have similar presentation to moods (see the readme.) They act as an offset, mood_after = mood_before + mood_offset using standard vector addition and enforcement of the restricted domain [0,1] x [-5, 5]^4 through clamping.
+Mood Checks
+Typically when the game checks Elodie's mood, it checks if a specific mood variable is positive, e.g. (P > 0). This is common among weekend activities to aid the player in controlling Elodie's mood. Rarely, the game check Elodie's actually mood, these checks are presented with the moods full name, e.g. (Yielding). Don't mistake these for flag checks.  
 
-One important caveat this that negative offsets have no effect below zero, so 'F' + '-2F' = '' (zero) while 'F' + '2A' = 'A'; it may be a surprise that  'A' + '-2F' = 'A'.
+Mood Offsets
+Mood offsets have similar presentation to moods (see the readme.) They act as an offset, mood_after = mood_before + mood_offset using standard vector addition and enforcement of the restricted domain through clamping.
+
+One important caveat is that negative offsets have no effect below zero, so 'F' + '-2F' = '' (zero) while 'F' + '2A' = 'A'; it may be a surprise that  'A' + '-2F' = 'A'.
 
 Initial Value
 Elodie's inital mood is 'Depressed' from axes '2F4D'.
