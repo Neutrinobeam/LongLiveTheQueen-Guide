@@ -16,7 +16,7 @@ I highly suggest buying the game and playing through a couple times before using
 # Notation Used
 Labels
 
-Labels are followed by colons, e.g. 'A Beautiful Day:'. This serve no mechanical purpose in this guide and exist purely to aid the reader to orient themselves and align with in-game events.
+Labels are followed by colons, e.g. 'A Beautiful Day:'. They serve no mechanical purpose in this guide and exist purely to aid the reader to orient themselves and align with in-game events.
 
 Variables
 - I, A, F, C, D, W, Y, P, L - Individual measures of the 5 axes of Elodie's mood
