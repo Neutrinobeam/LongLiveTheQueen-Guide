@@ -1,0 +1,95 @@
+Skills
+Elodie has 42 skills across 14 subgroups and 4 groups. One of the main mechanics in the game is increasing Elodie's skills through classes so she can pass skill checks to change story events.
+
+Initial Value
+All skills start at zero.
+
+Subgroups
+Each subgroup contains three skills as presented below. Subgroup checks depend on subgroup value (sum of the subgroup's skills.) When increasing a skill through classes, there is a bonus from the subgroup value.
+
+Royal Demeanor
+    Composure, Elegance, Presence
+Conversation
+    Public Speaking, Court Manners, Flattery
+Expression
+    Decoration, Instrument, Voice
+Agility
+    Dance, Reflexes, Flexibility
+Weapons
+    Swords, Archery, Polearms
+Athletics
+    Running, Climbing, Swimming
+Animal Handling
+    Horses, Dogs, Falcons
+History
+    Novan History, Foreign Affairs, World History
+Intrigue
+    Internal Affairs, Foreign Intelligence, Ciphering
+Medicine
+    Herbs, Battlefield Medicine, Poison
+Economics
+    Accounting, Trade, Production
+Military
+    Strategy, Naval strategy, Logistics
+Faith
+    Meditation, Divination, Lore
+Lumen
+    Sense Magic, Resist Magic, Wield Magic
+
+Groups
+Groups contain two to five subgroups. When increasing a skill through classes, there is a bonus from the group value (sum of the subgroups, equivalently sum of the skills in the group.)
+
+Social Skills
+    Royal Demeanor, Conversation, Expression
+Physical Skills
+    Agility, Weapons, Athletics, Animal Handling
+Intellectual Skills
+    History, Intrigue, Medicine, Economics, Military
+Mystic Skills
+    Faith, Lumen
+
+Outfits
+Each subgroup has a corresponding outfit which temporarily raises that subgroup's skills by 10 each. Outfits are unlocked by raising that subgroup's skills all to 25 points or greater. Elodie's initial outfit is the 'Boarding School Uniform' which offers no bonuses. Only one check in the game ignores the outfit bonus. A second checks if outfits are unlocked, which effectively is a subgroup check that ignores the outfit.
+
+Classes
+Every week, the player picks two skills for Elodie to learn ('Morning' and 'Afternoon') for the five days of that week. There is a mood modifier based on Elodie's mood and the skill's subgroup. In addition, there are subgroup and group bonuses based on prior investment in those related skills. The skill being learned does contribute to these bonuses.
+    gain = 5 * max(0, 2 + mood mod + 0.01 * subgroup bonus + 0.001 * group bonus)    
+If either of a skill's subgroup members is below 25, its value cannot be raised above 50, otherwise the cap is 100. Outfits can raise a skill above 100, and that can change the outcomes of a small number of checks.
+
+The subgroup and group bonuses for the Afternoon class do not reflect the new value from the Morning class, but the 50 point cap does, so a Morning class raising its skill above 25 will allow an Afternoon class to raise its skill above 50 (provided the other skill is above 25 as well.)
+
+Subgroup Mood Mods
+Below are the subgroup mood mods given with the variable for that mood and a number of plus or minuses matching the mod, e.g. the mod from training a Royal Demeanor skill while Willful is -2 and while Yielding is +1.
+
+Royal Demeanor
+    +Y, -AFDL, --W
+Conversation
+    +CL, -P, --D
+Expression	
+    +D, -A
+Agility
+    +F, ---I
+Weapons
+    +A, -FC, ---Y, ---I
+Athletics
+    +CP, -D, ---I
+Animal Handling
+    +D, -A, ---I
+History
+    +Y, -P, --W
+Intrigue
+    +W, -FCL
+Medicine
+    +L, -A
+Economics
+    -P, --W
+Military
+    +AW, -F, --C
+Faith
+    +FYP, -L
+Lumen
+    +W, ---Y
+
+Special Faith Check (Potential Spoiler)
+After training a Faith Subgroup skill, a special check is made.
+    (Sense Magic>=80 and not Leadership) Priestess
