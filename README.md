@@ -64,7 +64,7 @@ In the above example, if conditions A, B, and C are all true, expressions 1 and 
 
 Operations within Conditionals
 - Boolean: not, or, and
-- Numerical: <, >, <=, +
+- Numerical: <, >, <=, >=, +
 
 Menus
 
