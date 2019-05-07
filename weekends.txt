@@ -1,0 +1,35 @@
+Default Weekend Activities
+These are available every weekend unless overriden by a special weekend activity with the same name. The overriding special weekend activity doesn't need to actually satisfy its conditions to block a default activity.
+
+[Attend Ball] (Dance >= 50) 
+	P, Na
+	(P > 0) D
+	(P < 0) C
+[Attend Court]
+    2YDP, Na, Ca
+[Attend Service] (A > 0 or F > 0 or C > 0 or D > 0)
+	(A > 0 and A >= C and A >= D) -A
+	(F > 0 and F >= C and F >= D) -F
+	(C > 0) -C
+	(D > 0) -D
+    
+	(Sense Magic >= 80 and not Priestess) Priestess
+[Explore Castle]
+    FL
+[Hunting] (Horses >= 50) 
+	(A < 0) -2FD, 0.5K
+	(A > 0) -2AC, K
+[Play with Toys]
+    CYL
+[Sneak Out]
+    2WL
+[Sports] (Reflexes >= 30)
+	(L > 0) A-L
+	() A 
+[Walk in the Gardens]
+    CL
+[Visit Tomb]
+    FD
+
+Notes
+I don't have 'Visit Dungeons', 'Tour Barracks', or 'Visit Treasury' here as they have default behavior, custom behavior based on the story, and need to be potentially unavailable based on the story. I felt it would be mentally simpler to just have them as Special Weekend Activities.
