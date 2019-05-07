@@ -1,0 +1,143 @@
+Checklist Unlocks:
+"Illuminate!", "Family is No Defense", "A Little Backup", "A Dangerous Juggler", "For the Good of Nova", 
+"Keep Your Friends Close", "A Promise Discarded", "Off with Their Heads"
+
+Week 1: Morning Classes: Accounting, Afternoon Classes: Accounting
+Weekend: Play with Toys
+
+Week 2: Morning Classes: Accounting, Afternoon Classes: Accounting
+Let Stay
+Weekend: Visit Julianna
+
+Week 3: Morning Classes: Trade, Afternoon Classes: Production
+Stay Still
+Weekend: Talk to your Father
+
+Week 4: Morning Classes: Trade, Afternoon Classes: Production
+Weekend: Attend Service
+
+Week 5: Tuxedo, Morning Classes: Reflexes, Afternoon Classes: Accounting
+Weekend: Visit the Treasury
+
+Week 6: Boarding School Uniform, Morning Classes: Reflexes, Afternoon Classes: Flexibility
+Guards
+Weekend: Visit Julianna
+Accept, "Illuminate!"
+
+Week 7: Morning Classes: Wield Magic, Afternoon Classes: Wield Magic
+Weekend: Play with Toys
+
+Week 8: Tuxedo, Morning Classes: Presence, Afternoon Classes: Presence
+Accept
+Weekend: Visit the Treasury
+
+Week 9: Boarding School Uniform, Morning Classes: Foreign Intelligence, Afternoon Classes: Wield Magic
+Weekend: Attend Court
+
+Week 10: Morning Classes: Battlefield Medicine, Afternoon Classes: Battlefield Medicine
+Bluff, Magic
+Weekend: Sneak Out
+
+Week 11: Morning Classes: Sense Magic, Afternoon Classes: Resist Magic
+Weekend: Sports
+
+Week 12: Morning Classes: Internal Affairs, Afternoon Classes: Internal Affairs
+Accept
+Weekend: Attend Court
+
+Week 13: Morning Classes: Sense Magic, Afternoon Classes: Resist Magic
+Question
+Weekend: Attend Service
+
+Week 14: Morning Classes: Foreign Intelligence, Afternoon Classes: Ciphering
+Weekend: Explore Castle
+
+Week 15: Morning Classes: Ciphering, Afternoon Classes: Wield Magic
+Invite, Lumen
+Weekend: Walk in the Gardens
+
+Week 16: Morning Classes: Ciphering, Afternoon Classes: Ciphering
+Speech, Blast
+Weekend: Attend Court
+
+Week 17: Morning Classes: Dance, Afternoon Classes: Dance
+Nod, Accuse, Imprison, "Family is No Defense"
+Weekend: Visit Dungeons
+
+Week 18: Morning Classes: Sense Magic, Afternoon Classes: Resist Magic
+Shame, Nobles
+Weekend: Attend Service
+
+Week 19: Morning Classes: Instrument, Afternoon Classes: Voice
+Raise
+Weekend: Walk in the Gardens
+
+Week 20: Morning Classes: Sense Magic, Afternoon Classes: Resist Magic
+Question, "A Little Backup"
+Weekend: Visit Tomb
+
+Week 21: Morning Classes: Instrument, Afternoon Classes: Voice
+Funny, Ignore
+Weekend: Sports
+
+Week 22: Morning Classes: Strategy, Afternoon Classes: Archery
+Armand
+Weekend: Visit Julianna
+
+Week 23: Morning Classes: Strategy, Afternoon Classes: Strategy
+Test, "A Dangerous Juggler"
+Weekend: Talk to Sabine
+
+Week 24: Morning Classes: Archery, Afternoon Classes: Archery
+Musician
+Weekend: Explore Castle
+
+Week 25: Morning Classes: Reflexes, Afternoon Classes: Archery
+Ally
+Weekend: Visit Tomb
+
+Week 26: Morning Classes: Reflexes, Afternoon Classes: Production
+Weekend: Sports
+
+Week 27: Morning Classes: Sense Magic, Afternoon Classes: Resist Magic
+Go
+Weekend: Sneak Out
+
+Week 28: Morning Classes: Wield Magic, Afternoon Classes: Wield Magic
+Lieke, Accept, "For the Good of Nova", "Keep Your Friends Close", "A Promise Discarded"
+Weekend: Attend Service
+
+Week 29: Morning Classes: *, Afternoon Classes: *
+Weekend: Attend Service
+
+Week 30: Morning Classes: Swords, Afternoon Classes: Swords
+Weekend: Visit Julianna
+Allow
+
+Week 31: Morning Classes: Swords, Afternoon Classes: Swords
+Weekend: Visit Dungeons
+
+Week 32: Morning Classes: * , Afternoon Classes: *
+*, Test
+Weekend: *
+
+Week 33: Morning Classes: *, Afternoon Classes: *
+*
+Weekend: *
+
+Week 34: Morning Classes: *, Afternoon Classes: *
+*, *
+Weekend: *
+
+Week 35: Morning Classes: *, Afternoon Classes: *
+Weekend: *
+
+Week 36: Morning Classes: *, Afternoon Classes: *
+Duel, Sword
+Weekend: *
+
+Week 37: Morning Classes: *, Afternoon Classes: *
+Reject, Execute, "Off with Their Heads"
+Weekend *
+
+Epilogue Windows 3, 13, 20, 22, 24
