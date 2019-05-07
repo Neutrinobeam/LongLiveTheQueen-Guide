@@ -1,0 +1,2069 @@
+Week 1: Family Visit:
+	C
+
+	Weekend:
+	[Charlotte] C, Playdate
+	[Father] L
+	[Dungeons]
+
+Week 2: Julianna Arrives:
+	[Refuse] AY
+	[Arrest] A,K, Dungeoness
+	[Accept] W, Mentor
+
+	Weekend:
+	[Charlotte] 
+		(not Playdate) :Weekend 1
+		() ...
+	[Father] Heartless
+	[Julianna] (Mentor) Inheritance
+	[Barracks] (Strategy >= 40)
+		P
+		(W > 0) -W
+		(W < 0) -Y
+	[Dungeons] 
+		(Dungeoness, not Caution)
+			Caution
+			[Listen]
+				[Free] P, Mentor
+				[Refuse] AW
+			[Reject] F
+		(K >= 5) AC, 0.5K
+		(W < 0) FY 
+		(W > 0) AW
+
+Week 3: Hidden Danger:
+	(Mentor)
+		Protector
+		[Still] (composure<10) [Look]
+		[Look] F
+	()
+		(Reflexes>=20) A
+		() F, Kin
+
+	Weekend:
+	[Father]
+		(Inheritance or Assistant) W, Intransigence
+		(not Heartless) :Weekend 2
+		() CY, Love
+	[Julianna] (Mentor)
+		(not Inheritance) :Weekend 2
+		() ... Trust
+	[Barracks] :Weekend 2
+	[Dungeons] :Weekend 2
+
+Week 4: A Quiet Day:
+	...
+
+	Weekend:
+	[Father]
+		(Inheritance, not Intransigence) :Weekend 3
+		(not Trust, not Heartless) :Weekend 2
+		(not Inheritance, not Love) :Weekend 3
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Trust) :Weekend 3
+		(Mentor and Intransigence)
+			Imperative
+			[Wait] Y
+			[Find] Vanguard
+			[What] Vanguard
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 2
+
+Week 5: An Unexpected Gift:
+	(Foreign Intelligence < 10 and Foreign Affairs < 40) -3Ca
+	() ...
+	(Court Manners >= 10)
+		[Wear] W, Finery
+		[Wait] Y
+	() C, Finery
+
+	Weekend:
+	[Father] :Weekend 4
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Imperative) :Weekend 4
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 2
+	[Treasury] (Accounting > 60 or Imperative)
+		(not Crystal and 60 >= Accounting > 40 and 70 > Presence) AW
+		(Accounting > 60 or Presence >= 70) and not Crystal and (Mentor or Assistant) and (Inheritance or Intransigence) and not Consequences
+			W, Crystal
+		() W	
+		
+Week 6: A New Face:
+	(not Mentor and not Dungeoness)
+		[Decline] Y, Mentorless
+		[Agree] W, Assistant
+	(Dungeoness and not Mentor)
+		[Agree] W, -5Na, Mentor
+		[Decline] A
+	(not Inheritance)
+		...
+	()
+		[Climb]
+			(Climbing >= 20) Thief
+		[Guards] A
+		[Run] F
+
+	Weekend:
+	[Father] :Weekend 6
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Heartless and not Assistant) :Weekend 2
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality)
+			Liminality
+			[Accept] 2CW, Lumen, "Illuminate!"
+			[Reject] Y, Mundanity
+			[Question] (Heartless)
+				[Proceed]
+					[Accept] 2CW, Lumen, "Illuminate!"
+					[Reject] Y, Mundanity
+				[Challenge] A
+					[Accept] 2CW, Lumen, "Illuminate!"
+					[Reject] Y, Mundanity
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 2
+	[Treasury] :Weekend 5
+		
+Week 7: Bumblement:
+	(Elegance < 10 and Reflexes < 10)
+		[Accept] (Court Manners >= 20)
+			C, 5Ca
+		[Apologize] D, -5Na
+		[Punish] A,K, -5Ca
+
+	Lack of Leadership (Dungeoness and not Mentor):
+	[Release] P, Amnesty
+	[Title] CW, Ambition
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna] :Weekend 6
+	[Selene] (Assistant and Intransigence and not Imperative)
+		F, Imperative
+	[Barracks] :Weekend 2
+	[Dungeon] 
+		(Ambition and not Brazenness)
+			Brazenness
+			[Taunt] A
+			[Execute] A, "Off with Their Heads", "Choked on Magical Chains", "Ending: Death"
+			[Ignore] F
+		(K >= 5) AC, 0.5K
+		(W < 0) FY 
+		(W > 0) AW
+
+	[Treasury] :Weekend 5
+
+Week 8: Moveable Type:
+	(Production + Trade >= 50)
+		[Accept] -875G, Printing	
+		[Decline]
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna] :Weekend 6
+	[Selene]
+		(Assistant and Crystal and not Liminality)
+			Liminality
+			[Accept] CW, Lumen, "Illuminate!"
+			[Reject] Y, Mundanity 
+			[Question] (Heartless)
+				[Accept] CW, Lumen, "Illuminate!"
+				[Reject] Y, Mundanity
+				[Mother]
+					[Accept] CW, Lumen, "Illuminate!"
+					[Reject] Y, Mundanity
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5
+			
+Week 9: Occupation:
+	(Military < 1) [Negotiate]
+	[Negotiate] Y, Negotiations
+	[Send Troops] 
+		W, Rebuffed
+		(Lumen) 	
+			[Use Magic] A, Sorceress
+			[Do Not]
+
+	A Matter of Etiquette:
+	(Finery)
+		(Court Manners >= 10)
+			[Considering] C, 5Na
+			[Not] W, -3Na
+		() -5Na
+		
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow)
+			Glow
+			[Drop] Y
+			[Push] W
+				(Kin, not Cousin) Penpal
+		(Mentor and Priestess and not Sensor)
+			A, Sensor
+			[Insist]
+				(Lore < 70 or (Presence < 40 and Conversation < 60)) A
+			[Allow] Y
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and Lumen and Meditation >= 80 and not Glow)
+			Glow
+			(not Backtracked and Kin and not Cousin) Penpal
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5	
+
+Week 10: Occupation Redux:
+	(not Negotiations and not Sorceress)
+		A
+		occupation_lost = int(1200 * (0.86 - 0.36 * (Strategy + 0.2 * Logistics)/100))
+		R -= occupation_lost
+
+	(not Negotiations and Sorceress)
+		(Wield Magic >= 40) AC2W, 20Na Arcanist
+		(Wield Magic >= 30) 
+			AC
+			occupation_lost = int(637 - 2 * Strategy)
+			R -= occupation_lost
+		()
+			2A, -5Na
+			occupation_lost = int(1750 - Logistics - 2 * Strategy)
+			R -= occupation_lost
+
+	(Negotiations)
+		[Surrender] 2DY, -30Na-30Ca, Molehill
+		[Ransom] 
+			[Agree] P, -10Na, -8000G, Pittance
+			[Barter] (Logistics >= 50 or Accounting + Trade > 50)
+				Pittance
+				(Accounting + Trade > 50) W, -4000G
+				() WP, -5000G
+			[Go Back]
+		[Punish] (Foreign Affairs >= 20)
+			[Title] P, -15Na, Denoble
+			[Marriage] 
+				Arrangement, "You Do If I Say You Do"
+				(Internal Affairs < 40) -10Na
+			[Execute] A, 3K, -15Na, Troublemaker, "Off with Their Heads"
+		[Bluff]
+			Pokerface
+			[Threaten] 
+				(Presence >= 60) C, 10Na
+				() D, Charade
+			[Overwhelm] (Foreign Affairs >= 80 or Foreign Intelligence >= 80)
+				C, 10Na
+			[Friends] (Court Manners >= 10 and Finery) 
+				C, 10Na, Spartacus
+			[Magic] (Lumen)
+				(Wield Magic + Presence > 60) 10Na, Showoff
+				() D, Charade
+		[Execute] A, 5K, Charade
+
+	Weekend:
+	[Father]
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Assistant and not Heartless) :Weekend 2
+		(not Charade and Rebuffed and not Retrospective) YP, Retrospective
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5	
+
+Week 11: Unfortunates:
+	(Charade)
+		A
+		occupation_lost = int(1200 * (0.86 - 0.36 * (Strategy + 2 * Logistics)/100))
+		R -= occupation_lost
+	
+	(not Charade, not Beast)
+		D, Beast
+
+	Weekend:
+	[Father]
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Assistant and not Heartless) :Weekend 2
+		((Charade or Rebuffed) and not Retrospective) YP, Retrospective
+	[Julianna] :Weekend 10
+	[Selene] :Weekend 10
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5	
+
+Week 12: An Unexpected Guest:
+	(Finery)
+		[Accept] CW, Opportunist
+		[Decline]
+			(Court Manners >= 40)
+				(Spartacus)
+					(Yielding) Y, Opportunist
+					()
+						[Accept] Y, Opportunist
+						[Decline] W, -10 Na, Spurned
+					
+			()
+				(Spartacus)
+					(Yielding) Y, Opportunist, Disillusioned
+					()
+						[Accept] Y, Opportunist, Disillusioned
+						[Decline] P, -15 Na, Spurned
+				() -10Na, Spurned
+
+	(not Finery)
+		(Herbs + Battlefield Medicine >= 50)
+			[Agree] 20Ca, -1200G, Hospital
+			[Decline]
+
+	Weekend:
+	[Father] :Weekend 11
+	[Julianna] :Weekend 10
+	[Selene] :Weekend 10
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5
+
+Week 13: Judgement:
+	[Labor] D, 10Ca, -5Na, Unapproved
+	[Prison]
+		(Archery >= 60) A
+		() A, -5Ca
+	[Execute]
+		(Archery >= 60) A, -10Ca, 10Na
+		() A,K, -10Ca, 10Na
+	[Question] (100 > Internal Affairs >=30)
+		(Court Manners >= 60) C
+		() 2A, -10Ca, -10Na, Unapproved
+	[Talk] (Internal Affairs >= 100) C
+
+	Weekend:
+	[Father] :Weekend 11
+	[Julianna] :Weekend 10
+	[Selene] :Weekend 10
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5	
+
+Week 14: Variety:
+	(Divination >= 60) Augury
+
+	(Thief and Court Manners >= 10)
+		[Guards] A, -5Ca
+		[Challenge] (50 > Court Manners >= 10) 
+			[Guards] A, -5Ca
+			[Eject] 5Ca, Roguish
+		[Eject] (Court Manners >= 50) 5Ca, Roguish
+		[Ignore] (Court Manners < 50) Y
+	
+	(not Beast)
+		D, Beast
+	(not Hospital)
+		(Herbs + Battlefield Medicine >= 50)
+			[Agree] 20Ca, -1200G, Hospital
+			[Decline]	
+	Weekend:
+	[Father] :Weekend 11
+	[Julianna] :Weekend 10
+	[Selene] :Weekend 10
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5
+
+Week 15: Preparing for the Procession:
+	(Opportunist)
+		[Invite]
+			Suitor
+		[Do Not]
+			(not Disillusioned) Y
+
+	(Printing)
+		[Poems] D, -10Ca, 10Na
+		[Army] (Strategy > 30)
+			W, R += 500, Propaganda
+		[Lumen]
+			(Lore < 80) W
+		[Religion] Y
+		
+	Weekend:
+	[Father] :Weekend 11
+	[Julianna] :Weekend 10
+	[Selene] :Weekend 10
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 7
+	[Treasury] :Weekend 5
+
+Week 16: The Good Lady:
+	[Lead] Lead
+	[Speech] Lead, Speech
+	[Avoid]
+	(Lead)
+		CWP
+		(Elegance >= 70 or Decoration >= 70) 10Ca
+		(Decoration >= 50) 5Ca
+
+		(Speech)
+			(Public Speaking >= 50) 
+				10Ca, 10Na
+				(Voice >= 70)
+					5Ca
+			() -10Na
+
+		(Penpal or Sorceress or Showoff or Troublemaker)
+			Assassin
+			(Reflexes < 30 and Flexibility < 30) "Gotten too Close to a Sword", "Ending: Death"		
+			[Fight]
+				(Polearms < 30 or (Polearms < 80 and Reflexes < 80 and Flexibility < 50)) "Gotten too Close to a Sword", "Ending: Death"
+				(Polearms < 50) 10F
+				()
+					[Kill] 5A, K, 10Na
+					[Capture] 5A, 10Na
+			[Blast] (Wield Magic > 0)
+				(Wield Magic < 100 and Reflexes < 80 and Flexibility < 50 and Battlefield Medicine < 20) "Let your blood run dry.", "Ending: Death"
+				(Wield Magic < 60) "Gotten too Close to a Sword", "Ending: Death"
+			[Run]
+				(Reflexes < 80 and Flexibility < 50 and Battlefield Medicine < 20) "Let your blood run dry.", "Ending: Death"
+				(Running >= 40) 3F
+				()
+					(Ca < 25) "Gotten too Close to a Sword", "Ending: Death"
+					() 5D3P
+		(not Lumen and ((Dungeoness and not Mentor) or Mentorless or Mundanity or (Mentor and Imperative and not Vanguard)))
+			F, -10Ca, Portent
+			(Crystal) Potential
+
+	(not Lead)
+		YL
+		[Fear] A, -5Ca, -5Na
+		[Yell] A, K, -5Ca
+		[Excuse] (Faith >= 30)
+	
+	(Dungeoness and not Mentor and not Amnesty) F, Jailbreak
+	
+	Weekend:
+	[Father]
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Assistant and not Heartless) :Weekend 2
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+		(Mentor and Portent and Potential and not Lumen and not Threshold)
+			Threshold
+			[Accept] 2CW, Lumen, "Illuminate!"
+			[Reject] F
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and Portent and Potential and not Lumen and not Threshold)
+			Threshold
+			[Accept] CW, Lumen, "Illuminate!"
+			[Reject] F
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+	[Barracks] :Weekend 2
+	[Dungeon]
+		(K >= 5) AC, 0.5K
+		(W < 0) FY 
+		(W > 0) AW
+	[Treasury] :Weekend 5
+	
+Week 17: Grand Ball:
+	(Assassin)
+		(Ciphering >= 60 and not Troublemaker) Stateful
+		(Ciphering < 60) Stateless
+
+	(Presence < 50 and Elegance < 50 and Composure < 50 and Decoration < 70) FP, -10Na
+
+	Dancing:
+	(Suitor) -5Na
+		[Nod] Footwork
+		[Shake]
+		[Angry] A, 0.5K, Footwork
+
+	(not Suitor and Opportunist)
+		[Dance] Preference, Footwork
+		[Don't] -5Na
+
+	(not Suitor and not Opportunist and Intrigue >= 40 and Court Manners >= 40)
+		Footwork
+		[Linley] Exuberance
+		[Adair] Naivete
+		[Banion]
+		[Chaine]
+		[Armand]
+		[Erwin]
+		[Scandalous]
+			WP
+			[Julianna] (Mentor)
+			[Brin] (not Denoble and not Troublemaker) Sappho
+			[Arisse]
+			[Alice] K, -5Ca, -15Na, Hysteria
+	(not Suitor and (Preference or Intrigue < 40 or Court Manners < 40))
+		Footwork
+		[Your Age] Exuberance
+		[Younger] Naivete 
+		[Older]
+		[Married]
+		[Scandalous]
+			W
+			(not Mentor and not Denoble and not Troublemaker) Sappho
+
+	(Footwork and Dance >= 90)
+		(Naivete or Hysteria) -5Na
+		() 5Na
+	(Footwork and Hysteria and Dance >= 30) K, -5Ca
+	(Footwork and Dance < 50) -10Na
+
+	Mingling:
+	(Court Manners + Flattery > 50) 10Na
+	
+	(Augury)
+		[Talk]
+			(not Naivete or Opportunist) Naunt
+			"A Timely Word"
+		[Silent]
+
+	A Challenger:
+	(not Charade and not Pittance and not Pokerface and (Negotiations or Arcanist))
+		(Arrangement)
+			[Accept]
+				Twostepper
+				(Suitor) -5Na
+				()
+					(Court Manners >= 40)
+						[Use] W, K, Plaything
+						[Marry] Playful
+							(Opportunist) W, "A Promise Discarded"
+					(Opportunist)
+						[Talarist] A, -10Na, Plaything
+						[Banion] Y, "A Promise Discarded"
+					() YP
+			[Refuse] 
+				P
+				(not Opportunist and Conversation >= 50) 10Na
+			[Betrothed] (Opportunist)
+				(Conversation >= 50) 5Na
+		
+		(Molehill or Troublemaker or Denoble)
+			[Duel]
+				(Suitor)
+					(Internal Affairs < 70 and Foreign Intelligence < 70 and Foreign Affairs < 40) -15Na
+					()
+						[Talk]
+							(Internal Affairs < 70 and Foreign Intelligence < 70)
+								Y
+								(Flattery < 60) -10Na
+						[Silent] -15Na
+			
+				(not Suitor)
+					AW, "A Matter of Honor"
+					(Athletics < 40 or Swords < 70) "Gotten too Close to a Sword", "Ending: Death"
+					() Gracefulness, Eventful
+			[Ignore] (Composure >= 20)
+				Y, -10Na
+			[Assassin] (Assassin)
+				Gracefulness, Eventful
+				[Imprison] A
+				[Execute] A, 3K, "Off with Their Heads"
+			[Execute]
+				A, 5K, Quash, Eventful, "Off with Their Heads"
+				(Public Speaking + Presence >= 100)
+					Gracefulness
+				()
+					votes = 1
+					(Mentor and Threshold and not Lumen) votes -=1
+					(Mentor) votes += 1	
+					
+					(Opportunist and (Troublemaker or Molehill) and not Exuberance) votes -= 1
+					() votes += 1
+					
+					(Troublemaker or Molehill) votes -= 1
+					() votes += 1
+
+					(Unapproved) votes -= 1
+					(Ambition) votes += 1
+
+					(Unapproved or Opportunist or Spurned) votes -= 2
+					() votes += 2
+
+					(not Denoble and not Troublemaker) votes -= 1
+					() votes += 1
+					
+					"A Trial of Your Peers"
+					
+					(votes < 0)
+						"For the Good of Nova"
+						(Opportunist) "A Promise Discarded"
+						"Ending: Generic", Window 8
+					() Gracefulness, 
+
+	(not Eventful and Stateful)
+		[Accuse]
+			Eventful
+			[Mistake] Y, -10Na
+			[Imprison] AD, Machination, "Family Is No Defense"
+			[Execute] A,3K, Scapegoat, "Off with Their Heads"
+		[Ignore] F
+	(not Eventful and Protector and Stateless and Internal Affairs >= 10)
+		[Talk]
+			(Poison >= 40)
+				[Accuse]
+					Eventful
+					[Imprison] AD, Machination, "Family Is No Defense"
+					[Execute] A, K, Scapegoat, "Off with Their Heads"
+				[Trust]
+		[Silence] F
+
+	(not Eventful)
+		(Sense Magic >= 80) Magician
+
+		(Magician or Penpal)
+			[Talk]
+				Familiarity
+				[Accuse] (Sense Magic >= 100)
+					Accusation
+					(Resist Magic >= 80) 5DW, "A Little Backup"
+					() "Ending: Generic", Window 8
+				[Laurent]
+					[Push]
+						Instigation
+						(Resist Magic >= 80) 5DW, "A Little Backup"
+						() "Ending: Generic", Window 8
+					[Sorry]
+				[Offer] Minister, "A Gathering of Light"
+				[Secret]					
+			[Avoid]
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna] :Weekend 16
+	[Selene] :Weekend 16
+	[Barracks] :Weekend 2
+	[Dungeon] 
+		(Machination) ...
+		(K >= 5) AC, 0.5K
+		(W < 0) FY 
+		(W > 0) AW
+	[Treasury] :Weekend 5
+
+Week 18: A Present:
+	(Sappho and not Gracefulness)
+		"The Language of Flowers"
+		[Accept] W, Bouquet
+		[Reject] A
+		[Regift]
+			(K >= 1) W, Unintended
+			() P
+	
+	(Twostepper and not Plaything and not Suitor)
+		Contender
+		[Away] Y
+		[Display] C
+		[Smash] AW, -5Ca
+		[Regift]
+			(K >= 3) W, Unintended
+			() P
+	
+	A Presence:
+	[Greet] (Composure >= 50)
+	[Shame]
+		(Presence >= 50) C, Snuffed
+		() A
+	[Insult]
+		(Flattery >= 50) C, Snuffed
+		() A
+	[Trip]
+		(Flexibility >= 30) W, Snuffed
+		() A
+
+	(Opportunist or Contender or Arrangement) D
+
+	(Intrigue >= 40)
+		[Nobles] Conspirators
+		[Commoners] Peasantry
+		[Foreigners] Outsiders
+		[Assassins] Cutthroats
+			[Training] -F-D
+			[Guards] F, R -= 100, Assets
+			[Punishment] A, 5K
+				(not Assassin) -10Ca
+		[Julianna] (Jailbreak)
+			[Kill] 3K, Wanted, "Off with Their Heads"
+			[Capture]
+
+			[Soldiers] R -= 300, Fugitive
+			[Reward]
+				Bounty
+				(Decoration >= 100) Portrait
+			[Ask Around] (Internal Affairs >= 40 and not Gracefulness and not Denoble and not Troublemaker)
+				Inquiry
+
+	(Accusation or Instigation) F, "Casting A Shadow"
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and (Accusation or Instigation))
+			(Lore >= 100) P
+			() FY
+		(Mentor and not Crystal and Vanguard and not Ultimatum)
+			Ultimatum
+			[Wait]
+			[Allow] DY, -10Na, -450G, Consequences
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+		(Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and (Accusation or Instigation))
+			(Lore >= 100) P
+			() Y
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and not Crystal and Intransigence and Imperative and not Ultimatum)
+			Ultimatum
+			[Wait]
+			[Allow] DY, -10Ca, -10Na, Consequences
+		(Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+	[Barracks] :Weekend 2
+	[Dungeon] 
+		(Machination and not Madness)
+			Madness
+			(F > 0) FP
+			(A > 0) A
+		(K >= 5) AC, 0.5K
+		(W < 0) FY 
+		(W > 0) AW
+	[Treasury] :Weekend 5	
+
+Week 19: Revenues:
+	[Raise]
+		(Accounting + Trade >= 100) -10Na, 3000G
+		() -10Ca, -10Na, 3000G
+	[Leave] (Accounting >= 10 and (Accounting < 50 or G >= 0))
+		(G < 0) AP, -10Ca, -15Na, 3000G
+	[Lower] (Accounting < 50 or G >= 3000)
+		(G < 3000)
+			P, -5Na
+			[Raise]
+				(Accounting + Trade >= 100) -10Na, 3000G
+				() -10Ca, -10Na, 3000G
+			[Leave] (Accounting >= 10 and (Accounting < 50 or G >= 0))
+				(G < 0) AP, -10Ca, -15Na, 3000G
+		() 10Ca, 10Na, -3000G
+
+	Betrothals:
+	(Opportunist and Contender)
+		(G >= 2000)
+			[Pay] -2000G
+			[Refuse] Spurned
+		()
+			Spurned
+
+	(Inquiry) F, -15Ca, Outlaw
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+		(Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Mentor and not Lumen and Consequences)
+			(K < 5) 
+				P
+				(D < 0) -5C
+				() -D
+			() CW
+			Lumen, "Illuminate!"
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(Assistant and not Lumen and Consequences)
+			(K < 5) P
+				(D < 0) -5C
+				() -D
+			() CW
+			Lumen, "Illuminate!"
+		(Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 20: Possession:
+	[Question] (Sense Magic >= 80)
+		Corruption
+		(Resist Magic >= 60) A, 10Ca, 10Na
+		(Flexibility >= 50) F
+		(Reflexes + Running >= 50) F, -5Na
+		() "Choked on Magical Chains", "Ending: Death"
+		"A Little Backup"
+	[Selene] (Assistant and 30 =< Sense Magic < 80)
+		Purification
+	[Julianna] (Mentor and 30 =< Sense Magic < 80)
+		Tutelage
+			(Composure < 10 and Meditation < 10)
+				A, -5Ca, -5Na
+				[Pardon] D, -10Ca
+				[Imprison] Bowed
+				[Execute] Demons
+			()
+				[Stop Waiting]
+					[Pardon] D, -10Ca
+					[Imprison] Bowed
+					[Execute] Demons
+				[Continue]
+					(Wield Magic < 30 and Resist Magic < 40)
+						(Flexibility > 50) F
+						(Reflexes + Running >= 50) F, -5Na
+						() "Choked on Magical Chains", "Ending: Death"
+					"A Little Backup"
+					(Public Speaking + Presence >= 50) 5Ca, 5Na, Powerful
+					() A					
+	[Pardon] (Mentor or Sense Magic < 30 or Sense Magic >= 80)
+		D, -10Ca
+	[Imprison] Bowed
+	[Execute] W, Demons, "Off with Their Heads"
+
+	A Petty Play:
+	(Outsiders and Spurned)
+		[Invest] (Trade >= 60)
+			-600G, Foresight
+		[Soldiers]
+			R -= 1200, Peacekeepers
+		[Ignore]
+
+	Weekend:
+	[Father] :Weekend 6
+	[Julianna] :Weekend 19
+	[Selene]
+		(Assistant and Purification)
+			P
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(Assistant and not Lumen and Consequences) :Weekend 19
+		(Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 21: Scofflaws:
+	(Bowed) 
+		-10Ca, -250G
+		(Bounty)
+			(Wanted and not Portrait) -10Ca
+			(Wanted and Portrait) 
+				(F < 0) -5A
+				() -F
+				10Ca, -300G, "The Price of Blood"
+	(Demons)
+		-5Ca, -5Na
+		(Mentor)
+			-5Ca, -5Na
+		(Bounty)
+			(Wanted and not Portrait) -10Ca
+			(Wanted and Portrait) 
+				(F < 0) -5A, 
+				() -F, 
+				10Ca, -300G, "The Price of Blood"		
+	(Bounty and Wanted and not Portrait) -10Ca
+	(Bounty and Wanted and Portrait)
+		(F < 0) -5A, 
+		() -F, 
+		10Ca, -300G, "The Price of Blood"		
+	(not Fugitive and not Bounty)
+		Saga
+		[Funny] C
+		[Terrible] A
+		
+		[Climb]
+			(Climbing >= 100) CW
+			(Climbing < 40) I2F4Y, -5Ca
+		[Ignore] -5Ca
+
+	Weekend:
+	[Father]
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Assistant and not Heartless) :Weekend 2
+		(Outlaw and (Corruption or Demons) and not Artifact)
+			Artifact			
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+		(Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Mentor and not Lumen and Consequences) :Weekend 19
+		(Mentor and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics)
+			P, Prismatics
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(Assistant and not Lumen and Consequences) :Weekend 19
+		(Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+		(Assistant and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics)
+			P, Prismatics
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 22: Regency:
+	[Arisse] Courtesan
+	[Erwin] Lineage
+	[Marry] (not Opportunist and not Contender)
+		-10 Ca, Ward
+	[Armand]
+		-10 Na, Protectorate
+	[Adele] (Naunt)
+		C
+	-I
+
+	Weekend:
+	[Father]
+		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Trust and not Assistant and not Heartless) :Weekend 2
+		(Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+	[Julianna]
+		(Mentor and not Inheritance) :Weekend 2
+		(Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
+		(Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(Mentor and Crystal and not Liminality) :Weekend 6
+		(Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(Mentor and Priestess and not Sensor) :Weekend 9
+		(Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Mentor and not Lumen and Consequences) :Weekend 19
+		(Mentor and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Selene]
+		(Assistant and Crystal and not Liminality) :Weekend 8
+		(Assistant and Intransigence and not Lumen and not Imperative) :Weekend 7
+		(Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(Assistant and not Lumen and Consequences) :Weekend 19
+		(Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+		(Assistant and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 23: Patronage:
+	(G >= 250)
+		[Accept] 10Ca, -250G, Musician
+		[Test] (Instrument + Voice >= 50 and Intrigue >= 20)
+			10Ca, -250G, Agent, "A Dangerous Juggler"
+		[Decline]
+
+	Weekend:
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Sabine] (Agent)
+		...
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 24: Recent News:
+	(Ward)
+		(Animal Handling >= 30) C
+		() P
+	(Conspirators and (Na <= -40 or Lineage or Protectorate))
+		[Arrest] R -= 400, Traitor
+		[Kill] 3K, Prevention, "Make it Look Like an Accident"
+		[Wait] (not Agent)
+		[Musician] (Agent) Subterfuge
+
+	Weekend:
+	[Adair] (Ward and not Fiance)
+		Fiance
+		[Allow] "Youth's First Kiss"
+		[Decline]
+		[Reject] 0.5K
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 25: A Forecast:
+	(G >= 4000 and (Outsiders or (Logistics >= 70 and Trade >= 40)))
+		Appropriations
+		[Warships] -4000G, Mariners
+		[Wait]
+	(Divination >= 90)
+		Foreboding
+		[Recruit]
+			(G >= 1000) -1000G, R += 1000
+		[Wait] 
+			(F < 0) -5A
+			() -F
+	() C
+
+	(Traitor) -10Na
+	(Subterfuge and Na <= -40)
+		[Arrest] R -= 400, Re-Traitor
+		[Kill] 3K, Re-Prevention, "Make it Look Like an Accident"
+		[Ally] (Strategy >= 40 or Public Speaking >= 40)
+			Parley
+
+	Weekend:
+	[Adair] :Weekend 24
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 26: Hostility:
+	((not Opportunist or Contender ) and Lineage)
+		F, -20Na
+		[Ishtar]
+			[Arrest] A
+			[Execute] A, 3K, "Off with Their Heads"
+		[Talasse] (Foreign Intelligence >= 70)
+			Terrorism
+		[No One] D
+
+		[Hovan]
+			Succession
+			[Child of Kigal]
+			[Lillah] (not Prevention)
+			[Heir of Lillah] (Prevention)
+			[Administrator] 10Ca
+			[Don't Care] P, 10Ca, -10Na
+		[Talarist] -10Ca, Favoritism, "No Other Rulers Before Me", 
+		[Wait] -5Ca, Estate
+		(Re-Traitor) -10Na
+	(Spurned or Ward)
+		(Foresight) 800G
+		(G < 890) -10Ca
+		()
+			[Aid] 10Ca, -890G
+			[Ignore] -10Ca
+		
+		(Re-Traitor) -10Na
+	(not Saga)
+		(Re-Traitor) -10Na
+
+		Saga
+		[Funny] C
+		[Terrible] A
+	
+		[Climb]
+			(Climbing >= 100) CW
+			(Climbing < 40) I2F4Y, -5Ca
+		[Ignore] -5Ca
+	(Re-Traitor) -10Na
+	()
+		C
+
+	Weekend:
+	[Adair] :Weekend 24
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 27: Invasion:
+	(Succession)
+		(Peacekeepers or Terrorism) C
+		()
+			P
+			(Foresight)  
+			(G < 550) -10Ca, -10Na
+			() -550G
+			R -= 1200
+
+	Party Planning:
+	(Parley and Court Manners < 80) P
+	[Go] C
+	[Stay] Antisocial
+	-I
+	
+	Weekend:
+	[Adair] :Weekend 24
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5
+
+Week 28: Sudbury:
+	(Antisocial)
+		L
+		(Court Manners < 80) -10Na
+		(Roguish)
+			[Sneak Out]
+				W
+				[Accept] Cookies
+				[Test] (Poison >= 70)
+					Cookies, Taster
+				[Refuse]
+				(Cookies) C
+			[Ignore]
+	()
+		((not Accusation and not Instigation and not Minister) or Ca <= -45)
+			(Assets) A
+			(Archery + Reflexes >= 100) FD
+			()
+				3F
+				(Battlefield Medicine < 70 or (Composure < 50 and Mediation < 50)) "Taken an arrow to the gut", "Ending: Death"
+	
+		(not Gracefullness and not Troublemaker and not Denoble)
+			[Gwenelle] DW
+			[Lieke] Y, -10Na
+			[Both] (Flattery >= 60)
+
+		(Novan History >= 90 or Lore >= 60)
+			Gossip
+			[Help] W, Forest
+			[Discourage] 
+				(Conversation >= 75) A, Horrify
+			[Parents] 10Na, Tattle
+
+		(Parley)
+			(Ward)
+				Advisor, "Keep Your Friends Close"
+				(not Horrify) Tattle
+			()
+				[Accept] 
+					Y, Alliance, Advisor, "Keep Your Friends Close", "For the Good of Nova"
+					(Contender or Opportunist) Supplanted, "A Promise Discarded"
+
+					(not Horrify) Tattle
+				[Reject]
+		-L
+		(Accusation or Instigation)
+			D
+
+	Weekend:
+	[Adair] :Weekend 24
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 29: Conflict:
+	(Na <= -40 and not Prevention and not Re-Prevention and not Advisor)
+		Divided, "A Land Divided"
+		(Forest and not Tattle)
+			[Send] -K
+			[Hostage] K, Hostage, "A Hostage to Fortune"
+
+		[Agree] -10Ca, Conscription
+		[Reject]
+	(Forest and not Tattle)
+		[Go With]
+			Adventure, "Things That Go Bump In The Night"
+			(Herbs < 70 or Running < 50) "Fallen Victim to Monsters", "Ending: Death"
+			10F
+			(Horses >= 70) "There and Back Again"
+			()
+				[Leave] 3K, Abandoned, "There and Back Again"
+				[Aid] -3K
+					(Dance < 30) "Fallen Victim to Monsters", "Ending: Death"
+					() "There and Back Again"
+		[Don't Go] Confidence
+		[Talk Out] Confidence
+		[Family] (Conversation >= 40)
+			A, Secrets
+	(not Advisor and (Outsiders or Appropriations or Foreboding))
+		[Agree] -10Ca, R += 879
+		[Reject]
+	(not Advisor)
+		(Prevention or Re-Prevention)
+			F
+		()
+			[Keep]
+			[Regift]
+				(K >= 3) W, Unintended
+				() P
+
+	Weekend 
+	[Father] (not Adventure) :Weekend 22
+	[Julianna] (not Adventure) :Weekend 22
+	[Selene] (not Adventure) :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] (not Adventure) :Weekend 18
+	[Treasury] (not Adventure) :Weekend 5	
+
+Week 30: Treating:
+	(Divided)
+		(Hostage)
+			[Peace] A, 5Na
+			[Ransom] W, -10Na, 2000G
+			[Exile] AW
+				(K > 10 or 10 * K + Presence >= 150)
+					-10Na, Exiles
+			United
+		((not Opportunist or Contender or Supplanted) and (not Contender or Supplanted) and not Ward)
+			[Agree] Y, 10Na, "For the Good of Nova", "Ending: Generic"
+			[Refuse] W
+			[Compromise]
+				(Public Speaking < 70)
+					[Agree] 10Na, "For the Good of Nova", "Ending: Generic", Window 8
+					[Refuse] A
+				()
+					10Na, United, Armistice, "For the Good of Nova"
+		()
+			[Accept] "Ending: Generic", Window 8
+			[Refuse] A
+	(Confidence or Abandoned)
+		[Accept] DP
+		[Reject] K
+	(Forest and not Tattle and Secrets) C
+	(Adventure and not Abandoned) A5P
+	((Tattle or Horrify) and Supplanted)
+		(Contender)
+			[Arisse] (Court manners < 60)
+				Y, Heartbroken, Tactful
+			[Pay] (Court Manners >= 60)
+				(G >= 200) -200G
+				() Heartbroken
+			[Angry] (Court Manners < 60 and Conversation >= 50)
+				-5Na, Heartbroken
+			[Polite] (Court Manners < 60)
+				(Conversation >= 50) W, Unconsummate
+				() P, -5Na, Heartbroken
+			[Ignore]
+				Heartbroken
+		() F, -10Na
+			(Suitor) -5Ca, -5Na
+
+	Weekend:
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 31: Rebellion:
+	(Divided and not United)
+		loyalist_percent = 0.55 + (Courtesan) ? -0.1 : 0 + (Antisocial) ? -0.1 : 0
+		rebel_percent = 0.45 + (Courtesan) ? 0.1 : 0 + (Antisocial) ? 0.1 : 0
+		combat_bonus = 0. 
+		(Military < 1) combat_bonus -= .05
+
+		(Wield Magic >= 90) combat_bonus += .55
+		(Wield Magic >= 70 combat_bonus += .25
+		(Wield Magic >= 40) combat_bonus += .15
+		(Lumen) combat_bonus += .05
+
+		(Afraid) combat_bonus -= .2
+		loyalist_army = R * loyalist_percent + (Conscription) ? 623 : 0
+		rebel_army = R * rebel_percent
+		(Traitor or Re-Traitor)
+			rebel_army += 200
+		(Printing)		
+			(Conscription)
+				(Ca < -10) propaganda_percent = 0
+				(Ca < 0) propaganda_percent = 0.05
+				(Ca < 10) propaganda_percent = 0.10
+				(Ca < 20) propaganda_percent = 0.15
+				() propaganda_percent = 0.20
+			()
+				(Ca < 0) propaganda_percent = 0
+				(Ca < 10) propaganda_percent = 0.05
+				(Ca < 20) propaganda_percent = 0.10
+				(Ca < 30) propaganda_percent = 0.15
+				() propaganda_percent = 0.20
+			propaganda_recruitment = int(propaganda_percent * rebel_army)
+			loyalist_army += propaganda_recruitment
+			rebel_army -= propaganda_recruitment
+		rebel_strength = rebel_army * .5
+		loyalist_strength = loyalist_army * max(.1, combat_bonus + 0.01 * (Logistics + Strategy))
+		(loyalist_strength < rebel_strength) "Ending: Generic", Window 8
+		loyalist_loss = 0.3 * rebel_army / float(loyalist_army)
+		rebel_loss = 0.3 * loyalist_army / float(rebel_army)
+		(Wield Magic >= 90)
+			loyalist_loss *= .5
+			rebel_loss *= 2
+		
+		(Strategy >= 100)
+			loyalist_loss *= .5
+			rebel_loss *= .5
+		(Strategy + Logistics >=170 )
+			loyalist_loss *= .5
+		loyalist_loss_soldiers = loyalist_loss * loyalist_army
+		rebel_loss_soldiers = rebel_loss * rebel_army
+		
+		(K >= 10)
+			rebel_loss_soldiers += rebel_army*.1
+		
+		(Battlefield Medicine + Herbs > 0)
+			loyalist_loss_soldiers -= 2 * (Battlefield Medicine + Herbs)
+			(K < 5)
+				rebel_loss_soldiers -= Battlefield Medicine + Herbs
+		(Hospital)
+			loyalist_loss_soldiers *= .5
+			(K < 10)
+				rebel_loss_soldiers *= .5
+		
+		loyalist_loss_soldiers = max(0, loyalist_loss_soldiers)
+		rebel_loss_soldiers = max(0, rebel_loss_soldiers)
+		rebel_loss_soldiers = min(rebel_loss_soldiers, rebel_army - 200)
+		loyalist_loss_soldiers = min(loyalist_loss_soldiers, loyalist_army - 200)
+		R = loyalist_army + rebel_army - (loyalist_loss_soldiers + rebel_loss_soldiers)
+		1000G
+	(Divination >= 40)
+		F
+		(United)
+			[Send] C, R -= 1200
+			[Keep]
+		(not Advisor and (Outsiders or Appropriations)) A
+	(Secrets and not Divided)
+		(Ambition) Divorcee, "Interpersonal Diplomacy"
+		(Ciphering >= 30) Edification, "Better Left Unsaid"
+
+	Weekend:
+	[Adair] (Ward and (Divided and not United) and not Engagements)
+		Engagements
+		[Lie] P
+		[Gentle] D
+		[Brag] K
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+
+Week 32: Avarice:
+	[Status]
+	[Employment] R += 400
+	[Purse] (G >= 100)
+		-100G
+
+	(not Accusation and not Instigation and not Minister)
+		(Divination < 70 and Decoration >= 50) C
+
+		(dogs_ >= 50 or Court Manners >= 80 or Production + Trade >= 60 or Divination >= 70 or Composure >= 60)
+			[Eat]
+			[Save] Patience
+			[Test] ((Court Manners >= 80 or Production + Trade >= 60 or Divination >= 70) and Intrigue >= 100)
+				Suspicion
+
+		(not Suspicion and not Patience)
+			D
+			(Poison < 70) "Been Poisoned", "Ending: Death"
+		(Suspicion)
+			(Medicine >= 100) A, Tainted
+			(Advisor) ...
+			(K >= 5)
+				(Animal Handling < 10) "An Ex Chicken"
+				Research
+			() D, Frustration
+
+	Weekend:
+	[Adair] :Weekend 31
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5	
+	
+Week 33: Tournament:
+	[Horse]
+		(Horses >= 50 or Composure + Elegance >=60) 10Ca
+		() F, -10Ca
+	[Joust]
+		Exhaustion
+		(Horses >= 50 and Polearms >= 50)
+			(Polearms + Horses >= 160) 15Ca
+		() -10Ca
+	[Fencing]
+		Exhaustion
+		(Swords >= 80) 15Ca
+		(Swords < 30) -10Ca
+	[Archery]
+		(Archery >= 100) 10Ca
+	[Music]
+		(Instrument >= 90 and Voice >= 100) 15Ca, Aria
+		(Voice >= 100) 10Ca
+		(Voice < 50 and Public Speaking < 40) -5Ca
+		(Voice < 50) -10Ca
+	[Falcons]
+		(Falcons >= 100) 10Na
+		() DP
+	[None] D, -10Ca, Observer
+
+	For Honor:
+	(not Observer and (Confidence or (Divided and not United) or (not Divided and not Forest and not Tattle and not Horrify)))
+		Duelist, "A Gauntlet Thrown"
+		[Accept] A
+			[Swords]
+				((Exhaustion and Athletics < 100) or Swords < 90)
+					"Gotten too Close to a Sword", "Ending: Death"
+				Proxied
+			[Staves]
+				((Exhaustion and Athletics < 120) or Polearms < 50 or (Polearms + Flexibility < 100 and Presence + Public Speaking <= 60))
+					"Cracked your Skull", "Ending: Death"
+				(Polearms + Flexibility < 100) F, -10Ca, -10Na
+				()
+					[Hit] A, Proxied
+					[Restraint]
+						(Presence + Public Speaking > 60) 10Ca, 10Na, Honored
+						() D, Suffer
+		[Refuse] W, Objection
+			(Reflexes + Running >= 80) -10Ca
+			(Falcons < 80) "Gotten too Close to a Sword", "Ending: Death"
+		[Magic] (Wield Magic >= 30)
+			(Wield Magic < 60) "Gotten too Close to a Sword", "Ending: Death"
+			W3K, -20Ca, -20Na, Proxied
+
+	Ongoing Intrigues:
+	(Patience)
+		(K >= 5) C
+		() F
+	(Tainted or Research)
+		(Research) 3K, -5Ca
+		
+		[Guards] A, R -= 50
+		[Supplier] -100G
+		[Wait]
+
+	Weekend:
+	[Adair] :Weekend 32
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Sabine] (Agent and Aria)
+		[Accept] C
+		[Decline] P
+		[Flirt] -C
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5
+
+Week 34: Invasion:
+	(not Accusation and not Instigation and not Minister and not Frustration) and (Agent or Conspirators or Peasantry)
+		(Agent and not Frustration) ...
+		(Peasantry and Ca <= 30) A
+
+	(not Appropriations) F
+
+	(G > 0)
+		[Agree]
+			(G > 2000)
+				-2000G, R += 1000
+			()
+				R += 0.5 G, G = 0
+		[Refuse]
+
+	[Lead]
+		((Armistice or Advisor) and Naval Strategy + Swimming > 100) Leadership
+		(Armistice or Advisor)
+		() Leadership
+	[Stay]
+	
+	(Lumen and Leadership)
+		(Assistant)
+			(Minister)
+				[Agree] W, Pledge
+				[Refuse] F
+			()
+				[Agree] -W-Y, Pledge
+				[Refuse] D
+		(Sensor or Minister)
+			[Accept] W, Pledge
+				(Sensor and Minister) Vier
+			[Reject] F
+
+	Weekend:
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] :Weekend 2
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5
+
+Week 35: Last Chance:
+	(Pledge)
+		(Wield Magic >= 100)
+			((Vier and Lumen >= 200) or Lumen >= 300)
+				Turn, Prestige
+			((Vier and Lumen >= 120) or Lumen >= 200)
+				Turn, Resisted
+			()
+
+			(Prestige) "Plunged into the Depths"
+			(not Turn) "Blown Yourself Up", "Ending: Death"
+		()
+			Outranged
+			(Vier and Lumen >= 200) "Drowned at Sea", "Ending: Death"
+			(Lumen < 200 and not Vier or Lumen < 120) "Blown Yourself Up", "Ending: Death"
+			() Turn
+
+	(not Prestige and Molehill and Court Manners >= 60) -10Ca, R += 2000, "A Military Alliance"
+
+	(not Prestige)
+		(Mariners)
+			R += 3000
+
+		bonus = .0
+		(Naval Strategy <= 0)
+			bonus = -.25 
+		(Naval Strategy >= 50)
+			bonus = (Naval Strategy - 50)/1000.0 
+			(Leadership and Climbing >= 60)
+				bonus += (Naval Strategy/10000.0) 
+	
+		(Naval Strategy >= 100)
+			bonus += (Strategy/2000.0)
+	
+		(Logistics >= 90)
+			bonus += (Logistics/2000.0)
+	
+		(not Leadership)
+			bonus *= .5 
+		(Wield Magic >= 60)
+			bonus += .05
+			(Leadership and Climbing >= 60)
+				bonus += Wield Magic/3333.0
+		nova_power = R
+		nova_power += (nova_power*bonus)
+		shanjia_power = 18000 * (Turn) ? 0.5 : 1
+
+		/* Recommended breakpoints
+		 * No Arisse
+		 *		naval 1, climbing 60, naval 50, wield 60, naval 100, logistics 100, wield 100, strategy 100
+		 * Arisse
+		 *		naval + swimming 100, naval 1, climbing 60, ...
+		 */
+
+		(nova_power >= shanjia_power)
+			3C, 20Ca, 20Na, Victory
+			(not Pledge or Outranged) "Victory at Sea"
+		(Leadership)
+			(Strategy + Naval Strategy < 150)
+				-5CF
+				(Swimming >= 100) 
+					(W < 0) -5Y
+					() -W
+				(Swimming >= 80) 5D
+				(Swimming < 50 or (Composure < 70 and Meditation < 70)) "Drowned at Sea", "Ending: Death"
+				() I5F
+			() -5Ca, Retreat
+
+	Weekend:
+	[Father] :Weekend 22
+	[Julianna] :Weekend 22
+	[Selene] :Weekend 22
+	[Barracks] (Strategy > 40)
+		(not Prestige and not Victory)
+			DP
+		P
+		(W > 0) -W
+		(W < 0) -Y
+	[Dungeon] :Weekend 18
+	[Treasury] :Weekend 5
+
+Week 36: Diplomacy:
+	(Prestige or (Pledge and Victory)) F, -10Ca
+	(Victory)
+		[Ransom] (World History >= 80)
+			1000G, "A Hostage to Fortune"
+		[Ransom/Conscript] -10Ca, 700G, R += 890, "A Hostage to Fortune"
+		[Ransom/Execute] 3K, 700G, Proletariat, "A Hostage to Fortune", "Off with Their Heads"
+		[Execute] A, 3K, Proletariat, Charity, "Off with Their Heads"
+	()
+		(Opportunist and not Contender and not Supplanted)
+			[Accept] "Ending: Generic", Window 8
+			[Reject]
+		
+		(Composure < 40 and Court Manners < 60) A
+
+		[Duel]
+			Encircled
+			(Lumen)
+				(Resist Magic < 60) "Been Blasted by Magic", "Ending: Death"
+				(Sense Magic < 60 and (Resist Magic < 100 or Meditation < 30)) "Had your Life Drained", "Ending: Death"
+				(Sense Magic < 60 and Resist Magic >= 100 and Meditation >= 30)) W
+
+				(Wield Magic >= 50)
+					[Sword] Unsheathed
+					[Dazzle]
+				
+				((Unsheathed and Reflexes + Swords < 100) or (Wield Magic < 80 or Decoration < 70)) "Been Blasted by Magic", "Ending: Death"
+			(Artifact) 8F, Mirrored
+			()
+				A10D, Regicide, "Facing Facts"
+				(Composure < 70) "Been Blasted by Magic", "Ending: Death"
+				[Accept] 2Y
+				[Refuse] "Been Blasted by Magic", "Ending: Death"
+				[Rules] (Composure >= 100)
+					2W
+		[Marriage] (Foreign Intelligence < 90 and (not Opportunist or Contender or Supplanted)) and (not Contender or Supplanted) and not Ward and not Fiancee)
+			Fiancee, []
+		[Offer] ((Prismatics or Pledge or (Lumen and Lore >= 90) and not Supplicant)
+			Supplicant
+			(K < 10) []
+			[Accept] "To Serve Evil", "Ending: Evil", Window 16
+			[Refuse] []
+		[Sing] (Foreign Intelligence>=90 and not Audience)
+			Audience
+			(Instrument + Voice < 100 or Public Speaking < 70 or Presence < 70) []
+			15Ca, 15Na, Duet, "Angel of Music"
+		[Refuse] (Lumen)
+			F, Unyielding
+	-I
+
+	Weekend:
+	[Advisors] (Unyielding)
+		(Mentor)
+			[Alone]
+			[Together] D
+			"Ending: Generic", Window 8
+		(Assistant) 
+			(Meditation < 10) F
+			
+			((Lumen >= 300 and Meditation >= 10) or (Lumen >= 240 and Mediation >= 60)) -20Ca, -4000G, Tremors, "Fault Lines"
+			() "Blown Yourself Up", "Ending: Death"
+	[Father]
+		(Mirrored and not Sleepless)
+			DL, Sleepless, "A Mysterious Artifact"
+		(not Regicide and not Mirrored and not Unyielding and not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Regicide and not Mirrored and not Unyielding and not Trust and not Assistant and not Heartless) :Weekend 2
+		(not Regicide and not Mirrored and not Unyielding and Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+	[Julianna]
+		(Regicide and Mentor and not Mentored)
+			A, Mentored
+			[Accept] Lumen
+			[Refuse]
+		(not Unyielding and not Mirrored and Mentor and not Inheritance) :Weekend 2
+		(not Unyielding and not Mirrored and Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
+		(not Unyielding and not Mirrored and Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(not Unyielding and not Mirrored and Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(not Unyielding and not Mirrored and Mentor and Crystal and not Liminality) :Weekend 6
+		(not Unyielding and not Mirrored and Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(not Unyielding and not Mirrored and Mentor and Priestess and not Sensor) :Weekend 9
+		(not Unyielding and not Mirrored and Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(not Unyielding and not Mirrored and Mentor and not Lumen and Consequences) :Weekend 19
+		(not Unyielding and not Mirrored and Mentor and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Selene]
+		(Regicide and Assistant and not Mentored)
+			A, Mentored
+			[Accept] Lumen
+			[Refuse]
+		(not Unyielding and not Mirrored and Assistant and Crystal and not Liminality) :Weekend 8
+		(not Unyielding and not Mirrored and Assistant and Intransigence and not Lumen and not Imperative) :Weekend 9
+		(not Unyielding and not Mirrored and Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(not Unyielding and not Mirrored and Assistant and not Lumen and Consequences) :Weekend 19
+		(not Unyielding and not Mirrored and Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(not Unyielding and not Mirrored and Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+		(not Unyielding and not Mirrored and Assistant and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Ball] (not Unyielding and not Mirrored and Dance > 50)
+		P, Na
+		(P > 0) D
+		(P < 0) C
+	[Barracks] (not Unyielding and not Mirrored and Strategy > 40) 
+		(not Prestige and not Victory) :Weekend 35
+		P
+		(W > 0) -W
+		(W < 0) -Y
+	[Castle] (not Unyielding and not Mirrored)
+		FL
+	[Court] (not Unyielding and not Mirrored) 
+		(Regicide)
+			2Y2P, Ca, Na
+		()
+			2YDP, Na, Ca
+	[Dungeons] (not Unyielding and not Mirrored) 
+		(Machination and not Madness) :Weekend 18
+		(K > 5) AC, 0.5K
+		(Y) FY 
+		(W) AW
+	[Gardens] (not Unyielding and not Mirrored)
+		CL
+	[Hunt] (not Unyielding and not Mirrored and Horses > 50)
+		(A < 0) -2FD, 0.5K
+		(A > 0) -2AC, K
+	[Service] (not Unyielding and not Mirrored and (A > 0 or F > 0 or C > 0 or D > 0))
+		(A > 0 and A >= C and A >= D) -A
+		(F > 0 and F >= C and F >= D) -F
+		(C > 0) -C
+		(D > 0) -D
+
+		(Sense Magic >= 80 and not Priestess) Priestess
+	[Sneak Out] (not Unyielding and not Mirrored)
+		(Regicide)
+			DWL
+		()
+			2WL
+	[Sports] (not Unyielding and not Mirrored and Reflexes > 30)
+		(Lonely) A-L
+		() A 
+	[Tomb] (not Unyielding and not Mirrored)
+		FD
+	[Toys] (not Unyielding and not Mirrored)
+		CYL
+	[Treasury] (not Unyielding and not Mirrored) :Weekend 5
+
+Week 37: (Tremors) Skip classes and advance to weekend
+	Loose Ends:
+	(Victory) 2C
+	(Prestige) ...
+	(Regicide)
+		(not Musician and (not Agent or (not Frustration and (Accusation or Instigation or Minister))))
+			(Peasantry) -5Ca
+			() -10Ca
+	(Duet) C
+	(Encircled)
+		-766G 
+		(not Peasantry and (not Opportunist or Contender or Supplanted) -10Ca
+		"A Little Backup"
+
+	(Victory or Prestige or Duet or Encircled)
+		(not Accusation and not Instigation and not Minister and Agent and not Frustration)
+			(Magician and not Familiarity) Y
+			D
+			Backtracked
+			[Accept]
+				[Execute Her] Rebel, "Off with Their Heads"
+				[Execute Both] (not Machination and not Scapegoat)
+					Rebel, "Off with Their Heads"
+				[Execute and Banish] Rebel, "Off with Their Heads"
+				[Execute All] Rebellion, "Off with Their Heads"
+				[Banish All]
+			[Reject]
+				A, Deceit
+				[Imprison]
+				[Execute] 3K, "Off with Their Heads"
+			[Charlotte] (Kin)
+				[Execute Her] Rebel, "Off with Their Heads"
+				[Execute Both] (not Machination and not Scapegoat)
+					Rebel, "Off with Their Heads"
+				[Execute and Banish] Rebel, "Off with Their Heads"
+				[Execute All] Rebellion, "Off with Their Heads"
+				[Banish All] 
+	(Regicide)
+		(Agent and not Accusation and not Instigation and not Minister and not Frustration)
+			(not Depressed)
+				[Execute] -15Ca, -15Na, Re-Rebel
+				[Wait] D2Y
+	
+	(Prestige or (Pledge and Victory))
+		[Sacrifice] "Fallen Victim to Monsters", "Ending: Death"
+		[Charlotte] (Backtracked or (Familiarity and K >= 10))
+			(not Backtracked and not Machination and not Scapegoat) 5K
+			Oblation, "The Needs Of The Many"
+		[Seal] (not Depressed)
+			W, Behemoth
+
+	Weekend:
+	[Adair] (Regicide and Ward and not Diminutives)
+		-D-L, Diminutives
+	[Father]
+		(Mirrored and not Sleepless) :Weekend 36
+		(not Regicide and not Mirrored and not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
+		(not Regicide and not Mirrored and not Trust and not Assistant and not Heartless) :Weekend 2
+		(not Regicide and not Mirrored and Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+	[Julianna]
+		(Regicide and Mentor and not Mentored) :Weekend 36
+		(not Regicide and Mentor and not Inheritance) :Weekend 2
+		(not Regicide and Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
+		(not Regicide and Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
+		(not Regicide and Mentor and Intransigence and not Crystal and not Imperative) :Weekend 4
+		(not Regicide and Mentor and Crystal and not Liminality) :Weekend 6
+		(not Regicide and Mentor and Lumen and Meditation >= 80 and not Glow) :Weekend 9
+		(not Regicide and Mentor and Priestess and not Sensor) :Weekend 9
+		(not Regicide and Mentor and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(not Regicide and Mentor and not Lumen and Consequences) :Weekend 19
+		(not Regicide and Mentor and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Selene]
+		(Regicide and Assistant and not Mentored) :Weekend 36
+		(not Regicide and Assistant and Crystal and not Liminality) :Weekend 8
+		(not Regicide and Assistant and Intransigence and not Lumen and not Imperative) :Weekend 9
+		(not Regicide and Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
+		(not Regicide and Assistant and not Lumen and Consequences) :Weekend 19
+		(not Regicide and Assistant and Portent and Potential and not Lumen and not Threshold) :Weekend 16
+		(not Regicide and Assistant and Lumen, Meditation >= 80 and not Glow) :Weekend 9
+		(not Regicide and Assistant and (Accusation or Instigation or Corruption or Tutelage) and not Prismatics) :Weekend 21
+	[Barracks] :Weekend 35
+	[Court] :Weekend 36
+	[Dungeon] :Weekend 18
+	[Sneak Out] :Weekend 36
+	[Treasury] :Weekend 5
+
+Week 38: Anger:
+	(Oblation and not Rebel and not Re-Rebel and not Accusation and not Instigation) "Had your Life Drained", "Ending: Death"
+
+	(Ca < -45)
+		(not Peasantry and not Regicide and (Vacancy or Re-Rebel)) P
+		(Peasantry) 
+			[Concert] ((Musician or Agent) and not Deceit)
+				10Ca, Loyalty
+			[Medicine] (Herbs >= 10)
+				(Divination >= 30) 15Ca, Loyalty, "A Divine Omen"
+				(Herbs + Battlefield Medicine > 50 or Decoration >= 50 or Elegance >= 50) 10Ca, Loyalty
+			[Speech]
+				(Presence + Public Speaking > 100 or Presence + Elegance > 100 or Presence + Decoration > 100) 10Ca, Loyalty
+
+	(Regicide and not Demons and not Re-Rebel and not Accusation and not Instigation) Y, Cousin
+	(Minister and Ca >= -45) Cousin, Heritage
+
+	(Behemoth) -200G
+
+	Public Feast:
+	(G < 100) -10Ca
+	()
+		[Extravagant] (G >= 500)
+			-500G
+			(not Regicide) 15Ca
+		[Respectable] (G >= 250)
+			10Ca, -250G
+		[Small] (G >= 100)
+			10Ca, -100G, Generosity
+		[None] -10Ca
+		
+	Weekend:
+	[Adair] :Weekend 37
+	[Charlotte] (Cousin and not Reunion)
+		Reunion
+		(Heritage) C
+		(Machination or Scapegoat) D
+		(D < 0) -5C
+		() -D
+
+	[Father] :Weekend 37
+	[Julianna] :Weekend 37
+	[Selene] :Weekend 37
+	[Barracks] :Weekend 35
+	[Court] :Weekend 36
+	[Dungeon] :Weekend 18
+	[Sneak Out] :Weekend 36
+	[Treasury] :Weekend 5
+
+Week 39: Consort:
+	(Ca <= -45 and not Loyalty)
+		"The Will Of The People"
+		(not Lumen) "Ending: Generic"
+		[Attack]
+			(Wield Magic >= 30) K, -10Ca, -10Na, Interrupted, Riotous
+			(Presence >= 100) 10Ca, Interrupted
+			() "Cracked your Skull", "Ending: Death"
+		[Don't] "Ending: Generic", Window 8
+
+	(not Interrupted)
+		(Decoration >= 30) 10Ca
+
+		(Ward)
+			...
+		(Regicide and (Rebel or Re-Rebel or Accusation or Instigation) and (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
+			[Soon]
+			[Wait] Postponement
+		(Regicide and (Rebel or Re-Rebel or Accusation or Instigation) or (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
+			...
+		()
+			(not Regicide and not Mirrored and Sappho and not Arrangment and not Gracefulness and not Quash and not Troublemaker and not Molehill) Matrimony
+
+			[Talarist] Seized
+			[Banion] (not Gracefulness)
+				Challenger
+			[Kiran] (Prevention or Re-Prevention or Exiles or (Divided and not United))
+				Feint
+			[Linley] (Exuberance)
+				Earnest
+			[Ignatius] (Divorcee)
+				Bull
+			[Kevan] (not Duelist or Honored or (not Objection and not Proxied and not Suffer and (Presence_ + Public Speaking_ > 60 or (Presence_ + Public Speaking_ > 50 and ((Composure_ >= 25 and Elegance_ >= 25 and Presence_ >= 25) or (Public Speaking_ >= 25 and Court Manners_ >= 25 and Flattery_ >= 25))))))
+				Bear
+			[Adair] ((Opportunist and not Contender) or not Lineage)
+				Vassal
+			[Anciet] Obsession
+			[Briony] (Adventure and not Abandoned)
+				Coven
+			[Evrard] (Cookies)
+				Sous-Chef
+			[No One] W, Bachelorette
+
+	Weekend:
+	[Adair] :Weekend 37
+	[Charlotte] :Weekend 38
+	[Father] :Weekend 37
+	[Julianna] :Weekend 37
+	[Selene] :Weekend 37
+	[Barracks] :Weekend 35
+	[Court] :Weekend 36
+	[Dungeon] :Weekend 18
+	[Sneak Out] :Weekend 36
+	[Treasury] :Weekend 5	
+
+Week 40: Coronation
+	"Long Live The Queen"
+
+	Epilogue:
+	(Arrangement) Rosethorn
+	
+	(Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 2
+	(not Lumen) Window 1
+	(Tremors) Windows 6, 10
+	(Generosity and not Retreat) -15Ca
+	
+	(not Postponement)
+		(Opportunist and not Contender and not Supplanted) Window 3, Ceremony, Upjumped, Groomed
+		(Contender and not Supplanted) Window 3, Ceremony
+		(Armistice or Alliance) Window 3, Ceremony
+	(Postponement and (Armistice or Alliance) and not Rebel and not Re-Rebel and not Accusation and not Instigation) Window 3, Ceremony, Advisement
+	
+	(Mirrored) Window 4
+	(Tremors) Window 3
+	(not Regicide)
+		(Matrimony and Challenger and not Denoble) Window 3, Rosethorn
+		(not Snuffed and (Opportunist or Contender or Arrangement)) Window 3
+		() Window 4
+	()
+		(Re-Rebel)
+			(Na <= -40) Window 7
+			() Windows 5, 6, "Rebellious Province"
+		(not Machination and not Scapegoat and not Rebel and and not Accusation and not Instigation and Internal Affairs >= 20) Windows 5, 6, Appeasement
+		() Windows 5, 9
+	
+	(Minister and Encircled) Window 1, "Shared Power Increased"
+	(Minister and Corruption) Window 10
+	
+	(not Regicide and Backtracked and not Deceit and (Rebel or Rebellion)) 
+		Window 11
+		(Rebellion) Window 6, "Rebellious Province"
+	(Backtracked and not Deceit) Window 10
+	
+	(Regicide and not Rebel and not Re-Rebel and not Accusation and not Instigation and not Advisement and not Appeasement) Window 12, Fruitless
+	
+	((Accusation or Instigation) and not Oblation) Window 9
+	
+	(Encircled and not Demons and (not Backtracked or Deceit or Rebel or Rebellion or Machination or Scapegoat) and not Consequences and not Regicide and (not Interrupted or not Riotous) and not Pledge)
+		Window 13
+		(not Exiles and not (Confidence or (Gossip and not Forest and not Tattle and not Horrify) or (not Gossip and not Divided) or Abandoned)) Window 14
+	(Lumen and Victory and (Propaganda or Powerful) and not Demons and not Jailbreak and (not Backtracked or Deceit or (Rebel or Rebellion)) and not Pledge)
+		Window 13
+		(not Ambition and not Exiles and not (Confidence or (Gossip and not Forest and not Tattle and not Horrify) or (not Gossip and not Divided) or Abandoned)) Window 14
+	(Behemoth) Window 17
+	(Oblation) Windows 10, 17
+	(Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 10
+	(not Ambition and not Minister) Windows 15, 18
+	(Minister and Encircled) Windows 6, 18
+	
+	(Duet) Window 19
+	(Victory) Window 20
+	(Regicide)
+		Window 20
+		(Foreign Intelligence < 60 and (World History >= 40 or Lore >= 30) and Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 10
+	(Encircled or Tremors) Window 20
+	
+	(Bounty and Wanted and Portrait) Window 20
+	
+	(Spartacus and ((not Opportunist or Contender or Supplanted or Ceremony) and not Upjumped and not Favoritism and (not Seized or Ceremony)) Window 20
+	(Estate) Window 3, Groomed
+	(Succession)
+		(Ceremony or not Seized) Window 20
+		()
+			Window 3, Ceremony, Upjumped, Groomed
+		 	(Lineage and not Favoritism) Window 9
+	(Suitor and Supplanted) Window 20
+	
+	(Unconsummate) Window 9
+	(Heartbroken)
+		Window 9
+		(not Tactful) Window 3
+	
+	(Postponement and Contender and not Supplanted)
+		(Playful) Window 3, Ceremony
+		(Fruitless) Windows 3, 9, Ceremony
+		() Window 21
+	
+	(not Ceremony)
+		(Seized and Favoritism and not Groomed) 
+			Window 3
+			(Fruitless and K >= 10) "Make it Look Like an Accident"
+		(Seized and Disillusioned and not Groomed) Window 3
+		((Seized or (Postponement and Opportunist and not Contender and not Supplanted)) and not Groomed) Window 3
+		(Challenger and Matrimony) Window 3
+		(Bouquet and Fruitless and not Rosethorn) Window 3, 7
+		(Bouquet and (Bachelorette or (Regicide and not Rebel and not Re-Rebel and not Accusation and not Instigation))) Window 9
+		(Vassal or Ward)
+			Window 3
+			(Fruitless) Window 9
+		(Feint)
+			(Divided) Window 12
+			(Prevention or Re-Prevention) Window 9
+		(Earnest)
+			(Exiles) Window 21
+			() Window 3
+		(Obsession and K < 5) Windows 3, 9
+		(Coven) Window 9
+		(Challenger)
+			Window 3
+			(Troublemaker) Window 12
+		(Sous-Chef)
+			(Taster)
+				Window 9
+				(Ca <= -20 or Na <= -20) Window 3, "An Unexpected Pairing"
+			(K >= 5) Windows 3, 9
+			()
+				Window 9
+				(Ca > 0 and Na > 0 and not Behemoth and (not (Spartacus and ((not Opportunist or Contender or Supplanted or Ceremony) and not Upjumped and not Favoritism and (not Seized or Ceremony))) and not Charity and not Tremors) Window 3, "An Unexpected Pairing"
+		(Bear)
+			(Edification or Confidence or (Divided and not United) or (Divided and not Tattle and not Help and not Horrify)) Window 9
+			() Window 21
+		(Bull)
+			Window 9
+			(Duet) Window 3
+		((Proletariat or Oblation) and (Unintended or Hysteria)) Window 9, "An Unexpected Pairing"
+		(Military + Intrigue > Expression + Conversation) Window 3
+		(K >= 5) Window 9
+		() Window 3
+	
+	(Printing) Window 22
+	
+	(Hospital) Window 23
+	
+	Window 24
