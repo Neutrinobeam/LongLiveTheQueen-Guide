@@ -1,0 +1,201 @@
+Guaranteed
+"Illuminate!", "A Gathering Of Light", "The Language Of Flowers", "A Little Backup", "Long Live The Queen"
+Optional
+"Things That Go Bump In The Night", "There And Back Again", "A Divine Omen", "Better Left Unsaid", "Plunged Into The Depth", "The Will Of The People", "Shared Power Increased"
+
+Week 1: Internal Affairs, Ciphering
+Play with Toys
+
+Week 2: Trade, Production
+Arrest her
+Play with Toys
+
+Week 3: Composure, Elegance
+Visit Dungeons
+Hear her out, Free her
+
+Week 4: Court Manners, Trade
+Play with Toys
+
+Week 5: Trade, Production
+Don't wear it
+Visit Julianna
+
+Week 6: Composure, Elegance
+Call the guards
+Talk to Father
+
+Week 7: Presence, Presence
+Visit Julianna, I'll try to find a way
+
+Week 8: Presence, Presence
+Invest
+Visit Treasury
+
+Week 9: Court Manners, Court Manners
+Visit Julianna, Do it, "Illuminate!"
+
+Week 10: Running, Running
+Bluff / Intimidate, Threaten to attack
+Sneak Out
+
+Week 11: Resist Magic, Wield Magic
+Sneak Out
+
+Week 12: Poison, Sense Magic
+Visit Treasury
+
+Week 13: Internal Affairs, Foreign Intelligence
+Execute her
+Attend Service
+
+Week 14: Resist Magic, Wield Magic
+Visit Treasury
+
+Week 15: Sense Magic, Sense Magic
+Poems praising your mother
+Attend Court
+
+Week 16: Sense Magic, Sense Magic
+I would rather not go, Confess your fears
+Visit Dungeons
+
+Week 17: Dance, Dance
+Examine the women, Brin, Talk to your aunt, Offer her a court position, "A Gathering Of Light"
+Sneak Out
+
+Week 18: Strategy, Strategy
+Accept them, "The Language Of Flowers", Insult her with false flattery, Commoner uprisings
+Attend Court
+
+Week 19: Resist Magic, Resist Magic
+Raise taxes
+Attend Service
+
+Week 20: Strategy, Battlefield Medicine
+Question him about crystal, "A Little Backup"
+Visit Tomb
+
+Week 21: Herbs, Poison
+That's hilarious!, Ignore it
+Visit Julianna, Let it go
+
+Week 22: Battlefield Medicine, Herbs
+Send him to his grandfather
+Attend Service
+
+Week 23: Herbs, Herbs
+Reject her
+Tour Barracks
+
+Week 24: Foreign Affairs, World History
+Tour Barracks
+
+Week 25: Novan History, Novan History
+Play with Toys
+
+Week 26: Foreign Affairs, World History
+Blame no one, Delay
+Visit Julianna
+
+Week 27: Novan History, Novan History
+Go to Sudbury for Gwenelle's party
+Attend Service
+
+Week 28: History Outfit, Novan History, Running
+Side with her mother, Offer to help
+Visit Tomb
+
+Save Game 
+
+Week 29: Running, Dance
+Go with Briony, "Things That Go Bump In The Night", Support her, "There And Back Again"
+
+Week 30: Decoration, Decoration
+Sneak Out
+
+Week 31: Decoration, Decoration
+Sneak Out
+
+Week 32: Instrument, Voice
+Gold
+Visit Treasury
+
+Week 33: Instrument, Voice
+None
+Attend Service
+
+Week 34: Wield Magic, Wield Magic
+Recruit soldiers, Stay in the capital
+Attend Service
+
+Week 35: Decoration, Decoration
+Explore Castle
+
+Week 36: Lumen Outfit, Divination, Divination
+Accept his terms, Dazzle him
+Attend Service
+
+Week 37: Resist Magic, Wield Magic
+Play with Toys
+
+Week 38: Herbs, Logistics
+Heal the sick, "A Divine Omen", An extravagant feast
+Talk to Charlotte
+
+Week 39: Naval Strategy, Sense Magic
+No one
+Play with Toys
+
+Week 40: 
+Royal Demeanour Outfit, Internal Affairs, Logistics
+"Long Live The Queen", "Shared Power Increased", Window 1, 3, 4, 9, 13, 14, 20, 22, 24: 
+
+Load Save
+
+Week 29:
+Wield Magic, *
+Family
+Sneak Out
+
+Week 30: *, *
+Visit the Treasury
+
+Week 31: Ciphering, Ciphering
+"Better Left Unsaid"
+Tour Barracks
+
+Week 32: Wield Magic, Wield Magic
+Purse
+Play with Toys
+
+Week 33: *, *
+Falcons
+Tour Barracks
+
+Week 34: *, *
+Refuse, Lead, Agree
+Attend Service
+
+Week 35: *, *
+"Plunged Into The Depth"
+Attend Court
+
+Week 36: *, *
+Sneak Out
+
+Week 37: *, *
+Seal
+Attend Service
+
+Week 38: *, *
+None
+Visit Charlotte
+
+Week 39: *, *
+"The Will Of The People"
+Attack
+Play with Toys
+
+Week 40: *, *
+"Long Live The Queen", Window 3, 4, 10, 17, 22, 24
