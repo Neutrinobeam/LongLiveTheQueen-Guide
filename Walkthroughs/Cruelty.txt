@@ -1,7 +1,7 @@
 Guaranteed
 "Illuminate!", "A Dangerous Juggler", "Make It Look Like An Accident", "An Ex Chicken", "A Gauntlet Thrown"
 Options
- "Plunged into the Depths", "A Military Alliance", "To Serve Evil", "Blow Yourself Up"", "Fault Lines", "The Needs of the Many", "An Unexpected Pairing"
+ "Plunged into the Depths", "A Military Alliance", "To Serve Evil", "Blown Yourself Up"", "Fault Lines", "The Needs of the Many", "An Unexpected Pairing", "Long Live The Queen"
 
 Week 1: Internal Affairs, Foreign Intelligence
 Charlotte
@@ -161,7 +161,7 @@ No one
 *
 
 Week 40: *, *
-"An Unexpected Pairing"
+"Long Live The Queen", "An Unexpected Pairing"
 
 
 'To Serve Evil'
