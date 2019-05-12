@@ -13,7 +13,11 @@ Things covered by this guide
 
 I highly suggest buying the game and playing through a couple times before using this guide. It is a well made strategy / simulation indie that is available on Windows, Mac, and Linux with a very resonable price and is available both on Steam and from the [devs](https://www.hanakogames.com/llq.shtml).
 
-# Notation Used
+# Javascript Simulator
+
+Available through github.io, [here](https://htmlpreview.github.com/?https://github.com/Neutrinobeam/LongLiveTheQueen-Guide/blob/JS-simulator/simulator/lltq.html).
+
+# PlainText Guide Notation Used
 Labels
 
 Labels are followed by colons, e.g. 'A Beautiful Day:'. They serve no mechanical purpose in this guide and exist purely to aid the reader to orient themselves and align with in-game events.
