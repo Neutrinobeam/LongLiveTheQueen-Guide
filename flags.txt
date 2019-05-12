@@ -69,6 +69,7 @@ Cousin          - Were visited by Charlotte's family a second time
 Coven           - Chose to marry Briony
 Crystal         - Obtained a crystal after recruiting a mentor
 Cutthroats      - Had agents watching for assassins
+Darkened        - Refused to ever become a Lumen 
 Deceit          - Rejected Selene's explanation for the chocolate
 Demons          - Sent a murderer to be executed
 Denoble         - Stripped Brin of her title
@@ -148,7 +149,6 @@ Objection       - Refused to duel Kevan
 Oblation        - Sacraficed Charlotte to the Kraken
 Obsession       - Chose to marry Anciet
 Opportunist     - Became betrothed to Talarist
-Outlaw          - Spoke to Brin and Banion about Julianna
 Outranged       - Sailed out to use magic on the Shanjian invasion
 Outsiders       - Had agents watching foreigners
 Parley          - Met with Arisse at Sudbury
@@ -172,7 +172,7 @@ Prevention      - Had Arisse assassinated
 Priestess       - Determined Selene's secret
 Printing        - Invested in the printing press
 Proletariat     - Executed the commoners of the Shanjian prisoners
-Propaganda      - Printed army recruitment phamlets
+Propaganda      - Printed pro-Lumen phamlets
 Protector       - Julianna killed the milk viper
 Protectorate    - Sent Adair to Armand
 Proxied         - Purposefully killed Kevan after his challenge
@@ -242,4 +242,5 @@ Vassal          - Chose to marry Adair
 Victory         - Defeated the Shanjian fleet in conventional battle
 Vier            - Took four Lumens to challenge to Shanjian fleet
 Wanted          - Ordered Julianna's death
+War             - Lived to Week 35
 Ward            - Became engaged to Adair

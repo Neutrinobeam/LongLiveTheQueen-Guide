@@ -31,6 +31,7 @@ Week 2: Julianna Arrives:
 		(K >= 5) AC, 0.5K
 		(W < 0) FY 
 		(W > 0) AW
+	
 
 Week 3: Hidden Danger:
 	(Mentor)
@@ -66,7 +67,7 @@ Week 4: A Quiet Day:
 		(Mentor and Intransigence)
 			Imperative
 			[Wait] Y
-			[Find] Vanguard
+			[Find] W, Vanguard
 			[What] Vanguard
 	[Barracks] :Weekend 2
 	[Dungeon] :Weekend 2
@@ -87,10 +88,11 @@ Week 5: An Unexpected Gift:
 		(Mentor and Intransigence and not Imperative) :Weekend 4
 	[Barracks] :Weekend 2
 	[Dungeon] :Weekend 2
-	[Treasury] (Accounting > 60 or Imperative)
-		(not Crystal and 60 >= Accounting > 40 and 70 > Presence) AW
-		(Accounting > 60 or Presence >= 70) and not Crystal and (Mentor or Assistant) and (Inheritance or Intransigence) and not Consequences
+	[Treasury] (Accounting >= 60 or Imperative)
+		(Accounting >= 60 or Presence >= 70) and not Crystal and (Mentor or Assistant) and (Inheritance or Intransigence) and not Consequences
 			W, Crystal
+		(Accounting < 40 or not Crystal and 60 > Accounting and 70 > Presence)
+			AW
 		() W	
 		
 Week 6: A New Face:
@@ -401,8 +403,9 @@ Week 15: Preparing for the Procession:
 	(Printing)
 		[Poems] D, -10Ca, 10Na
 		[Army] (Strategy > 30)
-			W, R += 500, Propaganda
+			W, R += 500
 		[Lumen]
+			Propaganda
 			(Lore < 80) W
 		[Religion] Y
 		
@@ -647,7 +650,7 @@ Week 17: Grand Ball:
 					Accusation
 					(Resist Magic >= 80) 5DW, "A Little Backup"
 					() "Ending: Generic", Window 8
-				[Laurent]
+				[Laurent] (Stateful)
 					[Push]
 						Instigation
 						(Resist Magic >= 80) 5DW, "A Little Backup"
@@ -787,7 +790,7 @@ Week 19: Revenues:
 		()
 			Spurned
 
-	(Inquiry) F, -15Ca, Outlaw
+	(Inquiry) F, -15Ca
 
 	Weekend:
 	[Father] :Weekend 6
@@ -920,7 +923,7 @@ Week 21: Scofflaws:
 	[Father]
 		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
 		(not Trust and not Assistant and not Heartless) :Weekend 2
-		(Outlaw and (Corruption or Demons) and not Artifact)
+		(Inquiry and Demons and not Artifact)
 			Artifact			
 	[Julianna]
 		(Mentor and not Inheritance) :Weekend 2
@@ -962,7 +965,7 @@ Week 22: Regency:
 	[Father]
 		(not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
 		(not Trust and not Assistant and not Heartless) :Weekend 2
-		(Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+		(Inquiry and Demons and not Artifact) :Weekend 21
 	[Julianna]
 		(Mentor and not Inheritance) :Weekend 2
 		(Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
@@ -1154,7 +1157,7 @@ Week 28: Sudbury:
 				3F
 				(Battlefield Medicine < 70 or (Composure < 50 and Mediation < 50)) "Taken an arrow to the gut", "Ending: Death"
 	
-		(not Gracefullness and not Troublemaker and not Denoble)
+		(not Gracefulness and not Troublemaker and not Denoble)
 			[Gwenelle] DW
 			[Lieke] Y, -10Na
 			[Both] (Flattery >= 60)
@@ -1237,12 +1240,12 @@ Week 29: Conflict:
 Week 30: Treating:
 	(Divided)
 		(Hostage)
-			[Peace] A, 5Na
-			[Ransom] W, -10Na, 2000G
+			[Peace] A, 5Na, United
+			[Ransom] W, -10Na, 2000G, United
 			[Exile] AW
 				(K > 10 or 10 * K + Presence >= 150)
-					-10Na, Exiles
-			United
+					-10Na, Exiles, United
+
 		((not Opportunist or Contender or Supplanted) and (not Contender or Supplanted) and not Ward)
 			[Agree] Y, 10Na, "For the Good of Nova", "Ending: Generic"
 			[Refuse] W
@@ -1361,6 +1364,7 @@ Week 31: Rebellion:
 		(not Advisor and (Outsiders or Appropriations)) A
 	(Secrets and not Divided)
 		(Ambition) Divorcee, "Interpersonal Diplomacy"
+
 		(Ciphering >= 30) Edification, "Better Left Unsaid"
 
 	Weekend:
@@ -1527,6 +1531,7 @@ Week 34: Invasion:
 	[Treasury] :Weekend 5
 
 Week 35: Last Chance:
+	War
 	(Pledge)
 		(Wield Magic >= 100)
 			((Vier and Lumen >= 200) or Lumen >= 300)
@@ -1572,14 +1577,6 @@ Week 35: Last Chance:
 		nova_power = R
 		nova_power += (nova_power*bonus)
 		shanjia_power = 18000 * (Turn) ? 0.5 : 1
-
-		/* Recommended breakpoints
-		 * No Arisse
-		 *		naval 1, climbing 60, naval 50, wield 60, naval 100, logistics 100, wield 100, strategy 100
-		 * Arisse
-		 *		naval + swimming 100, naval 1, climbing 60, ...
-		 */
-
 		(nova_power >= shanjia_power)
 			3C, 20Ca, 20Na, Victory
 			(not Pledge or Outranged) "Victory at Sea"
@@ -1633,7 +1630,7 @@ Week 36: Diplomacy:
 					[Sword] Unsheathed
 					[Dazzle]
 				
-				((Unsheathed and Reflexes + Swords < 100) or (Wield Magic < 80 or Decoration < 70)) "Been Blasted by Magic", "Ending: Death"
+				((Unsheathed and Reflexes + Swords < 100) or not Unsheathed and (Wield Magic < 80 or Decoration < 70)) "Been Blasted by Magic", "Ending: Death"
 			(Artifact) 8F, Mirrored
 			()
 				A10D, Regicide, "Facing Facts"
@@ -1668,17 +1665,18 @@ Week 36: Diplomacy:
 			
 			((Lumen >= 300 and Meditation >= 10) or (Lumen >= 240 and Mediation >= 60)) -20Ca, -4000G, Tremors, "Fault Lines"
 			() "Blown Yourself Up", "Ending: Death"
+		// Skip week 37 classes
 	[Father]
 		(Mirrored and not Sleepless)
 			DL, Sleepless, "A Mysterious Artifact"
 		(not Regicide and not Mirrored and not Unyielding and not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
 		(not Regicide and not Mirrored and not Unyielding and not Trust and not Assistant and not Heartless) :Weekend 2
-		(not Regicide and not Mirrored and not Unyielding and Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+		(not Regicide and not Mirrored and not Unyielding and Inquiry and Demons and not Artifact) :Weekend 21
 	[Julianna]
 		(Regicide and Mentor and not Mentored)
 			A, Mentored
-			[Accept] Lumen
-			[Refuse]
+			[Accept]
+			[Refuse] Darkened
 		(not Unyielding and not Mirrored and Mentor and not Inheritance) :Weekend 2
 		(not Unyielding and not Mirrored and Mentor and not Crystal and Vanguard and not Ultimatum) :Weekend 18
 		(not Unyielding and not Mirrored and Mentor and not Intransigence and not Crystal and not Trust) :Weekend 3
@@ -1692,8 +1690,8 @@ Week 36: Diplomacy:
 	[Selene]
 		(Regicide and Assistant and not Mentored)
 			A, Mentored
-			[Accept] Lumen
-			[Refuse]
+			[Accept]
+			[Refuse] Darkened
 		(not Unyielding and not Mirrored and Assistant and Crystal and not Liminality) :Weekend 8
 		(not Unyielding and not Mirrored and Assistant and Intransigence and not Lumen and not Imperative) :Weekend 9
 		(not Unyielding and not Mirrored and Assistant and not Crystal and Intransigence and Imperative and not Ultimatum) :Weekend 18
@@ -1721,7 +1719,7 @@ Week 36: Diplomacy:
 		(Machination and not Madness) :Weekend 18
 		(K > 5) AC, 0.5K
 		(Y) FY 
-		(W) AW
+		(W) AW	
 	[Gardens] (not Unyielding and not Mirrored)
 		CL
 	[Hunt] (not Unyielding and not Mirrored and Horses > 50)
@@ -1748,56 +1746,60 @@ Week 36: Diplomacy:
 		CYL
 	[Treasury] (not Unyielding and not Mirrored) :Weekend 5
 
-Week 37: (Tremors) Skip classes and advance to weekend
-	Loose Ends:
-	(Victory) 2C
-	(Prestige) ...
-	(Regicide)
-		(not Musician and (not Agent or (not Frustration and (Accusation or Instigation or Minister))))
-			(Peasantry) -5Ca
-			() -10Ca
-	(Duet) C
-	(Encircled)
-		-766G 
-		(not Peasantry and (not Opportunist or Contender or Supplanted) -10Ca
-		"A Little Backup"
 
-	(Victory or Prestige or Duet or Encircled)
-		(not Accusation and not Instigation and not Minister and Agent and not Frustration)
-			(Magician and not Familiarity) Y
-			D
-			Backtracked
-			[Accept]
-				[Execute Her] Rebel, "Off with Their Heads"
-				[Execute Both] (not Machination and not Scapegoat)
-					Rebel, "Off with Their Heads"
-				[Execute and Banish] Rebel, "Off with Their Heads"
-				[Execute All] Rebellion, "Off with Their Heads"
-				[Banish All]
-			[Reject]
-				A, Deceit
-				[Imprison]
-				[Execute] 3K, "Off with Their Heads"
-			[Charlotte] (Kin)
-				[Execute Her] Rebel, "Off with Their Heads"
-				[Execute Both] (not Machination and not Scapegoat)
-					Rebel, "Off with Their Heads"
-				[Execute and Banish] Rebel, "Off with Their Heads"
-				[Execute All] Rebellion, "Off with Their Heads"
-				[Banish All] 
-	(Regicide)
-		(Agent and not Accusation and not Instigation and not Minister and not Frustration)
-			(not Depressed)
-				[Execute] -15Ca, -15Na, Re-Rebel
-				[Wait] D2Y
+
+Week 37: 
+	(Tremors)
+	()	
+		Loose Ends:
+		(Victory) 2C
+		(Prestige) ...
+		(Regicide)
+			(not Musician and (not Agent or (not Frustration and (Accusation or Instigation or Minister))))
+				(Peasantry) -5Ca
+				() -10Ca
+		(Duet) C
+		(Encircled)
+			-766G 
+			(not Peasantry and (not Opportunist or Contender or Supplanted) -10Ca
+			"A Little Backup"
 	
-	(Prestige or (Pledge and Victory))
-		[Sacrifice] "Fallen Victim to Monsters", "Ending: Death"
-		[Charlotte] (Backtracked or (Familiarity and K >= 10))
-			(not Backtracked and not Machination and not Scapegoat) 5K
-			Oblation, "The Needs Of The Many"
-		[Seal] (not Depressed)
-			W, Behemoth
+		(Victory or Prestige or Duet or Encircled)
+			(not Accusation and not Instigation and not Minister and Agent and not Frustration)
+				(Magician and not Familiarity) Y
+				D
+				Backtracked
+				[Accept]
+					[Execute Her] Rebel, "Off with Their Heads"
+					[Execute Both] (not Machination and not Scapegoat)
+						Rebel, "Off with Their Heads"
+					[Execute and Banish] Rebel, "Off with Their Heads"
+					[Execute All] Rebellion, "Off with Their Heads"
+					[Banish All]
+				[Reject]
+					A, Deceit
+					[Imprison]
+					[Execute] 3K, "Off with Their Heads"
+				[Ask] (Kin)
+					[Execute Her] Rebel, "Off with Their Heads"
+					[Execute Both] (not Machination and not Scapegoat)
+						Rebel, "Off with Their Heads"
+					[Execute and Banish] Rebel, "Off with Their Heads"
+					[Execute All] Rebellion, "Off with Their Heads"
+					[Banish All] 
+		(Regicide)
+			(Agent and not Accusation and not Instigation and not Minister and not Frustration)
+				(not Depressed)
+					[Execute] -15Ca, -15Na, Re-Rebel
+					[Wait] D2Y
+	
+		(Prestige or (Pledge and Victory))
+			[Sacrifice] "Fallen Victim to Monsters", "Ending: Death"
+			[Charlotte] (Backtracked or (Familiarity and K >= 10))
+				(not Backtracked and not Machination and not Scapegoat) 5K
+				Oblation, "The Needs Of The Many"
+			[Seal] (not Depressed)
+				W, Behemoth
 
 	Weekend:
 	[Adair] (Regicide and Ward and not Diminutives)
@@ -1806,7 +1808,7 @@ Week 37: (Tremors) Skip classes and advance to weekend
 		(Mirrored and not Sleepless) :Weekend 36
 		(not Regicide and not Mirrored and not Crystal and not Intransigence and (Inheritance or Assistant)) :Weekend 3
 		(not Regicide and not Mirrored and not Trust and not Assistant and not Heartless) :Weekend 2
-		(not Regicide and not Mirrored and Outlaw and (Corruption or Demons) and not Artifact) :Weekend 21
+		(not Regicide and not Mirrored and Inquiry and Demons and not Artifact) :Weekend 21
 	[Julianna]
 		(Regicide and Mentor and not Mentored) :Weekend 36
 		(not Regicide and Mentor and not Inheritance) :Weekend 2
@@ -1843,7 +1845,7 @@ Week 38: Anger:
 			[Concert] ((Musician or Agent) and not Deceit)
 				10Ca, Loyalty
 			[Medicine] (Herbs >= 10)
-				(Divination >= 30) 15Ca, Loyalty, "A Divine Omen"
+				(Herbs >= 80 and Divination >= 30) 15Ca, Loyalty, "A Divine Omen"
 				(Herbs + Battlefield Medicine > 50 or Decoration >= 50 or Elegance >= 50) 10Ca, Loyalty
 			[Speech]
 				(Presence + Public Speaking > 100 or Presence + Elegance > 100 or Presence + Decoration > 100) 10Ca, Loyalty
@@ -1898,10 +1900,10 @@ Week 39: Consort:
 
 		(Ward)
 			...
-		(Regicide and (Rebel or Re-Rebel or Accusation or Instigation) and (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
+		(Regicide and not Rebel and not Re-Rebel and not Accusation and not Instigation and (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
 			[Soon]
 			[Wait] Postponement
-		(Regicide and (Rebel or Re-Rebel or Accusation or Instigation) or (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
+		(Regicide and not Rebel and not Re-Rebel and not Accusation and not Instigation or (Opportunist and not Contender and not Supplanted) or (Contender and not Supplanted) or (Armistice or Alliance))
 			...
 		()
 			(not Regicide and not Mirrored and Sappho and not Arrangment and not Gracefulness and not Quash and not Troublemaker and not Molehill) Matrimony
@@ -1944,7 +1946,7 @@ Week 40: Coronation
 	Epilogue:
 	(Arrangement) Rosethorn
 	
-	(Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 2
+	(not Lumen and ((Mentored and Darkened) or Mentorless or (Dungeoness and not Mentor))) Window 2
 	(not Lumen) Window 1
 	(Tremors) Windows 6, 10
 	(Generosity and not Retreat) -15Ca
@@ -1988,7 +1990,7 @@ Week 40: Coronation
 		(not Ambition and not Exiles and not (Confidence or (Gossip and not Forest and not Tattle and not Horrify) or (not Gossip and not Divided) or Abandoned)) Window 14
 	(Behemoth) Window 17
 	(Oblation) Windows 10, 17
-	(Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 10
+	(not Lumen and ((Mentored and Darkened) or Mentorless or (Dungeoness and not Mentor))) Window 10
 	(not Ambition and not Minister) Windows 15, 18
 	(Minister and Encircled) Windows 6, 18
 	
@@ -1996,7 +1998,7 @@ Week 40: Coronation
 	(Victory) Window 20
 	(Regicide)
 		Window 20
-		(Foreign Intelligence < 60 and (World History >= 40 or Lore >= 30) and Mentorless or not Lumen and (Mentored or (Dungeoness and not Mentor))) Window 10
+		(Foreign Intelligence < 60 and (World History >= 40 or Lore >= 30) and (not Lumen and ((Mentored and Darkened) or Mentorless or (Dungeoness and not Mentor)))) Window 10
 	(Encircled or Tremors) Window 20
 	
 	(Bounty and Wanted and Portrait) Window 20
@@ -2033,7 +2035,7 @@ Week 40: Coronation
 			Window 3
 			(Fruitless) Window 9
 		(Feint)
-			(Divided) Window 12
+			(Divided) Window 21
 			(Prevention or Re-Prevention) Window 9
 		(Earnest)
 			(Exiles) Window 21
