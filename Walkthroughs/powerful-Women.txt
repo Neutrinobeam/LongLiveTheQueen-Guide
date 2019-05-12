@@ -1,7 +1,7 @@
 Guaranteed
 "Illuminate!", "A Gathering Of Light", "The Language Of Flowers", "A Little Backup", "Long Live The Queen"
 Optional
-"Things That Go Bump In The Night", "There And Back Again", "A Divine Omen", "Better Left Unsaid", "Plunged Into The Depth", "The Will Of The People", "Shared Power Increased"
+"Casting A Shadow", "Things That Go Bump In The Night", "There And Back Again", "A Divine Omen", "Better Left Unsaid", "Plunged Into The Depth", "The Will Of The People", "Shared Power Increased"
 
 Week 1: Internal Affairs, Ciphering
 Play with Toys
@@ -44,6 +44,33 @@ Sneak Out
 
 Week 12: Poison, Sense Magic
 Visit Treasury
+
+Save Game If Getting 'Casting A Shadow' Otherwise Skip
+
+Week 13: Resist Magic, Wield Magic
+Execute her
+Attend Service
+
+Week 14: Sense Magic, Sense Magic
+Visit Treasury
+
+Week 15: Sense Magic, Sense Magic
+Poems praising your mother
+Attend Court
+
+Week 16: Resist Magic, Resist Magic
+Lead
+Play with Toys
+
+Week 17: Lumen Outfit, Sense Magic, Wield Magic
+Scandalous, Talk to your aunt, Accuse, "A Little Backup"
+*
+
+Week 18: *, *
+*, *, *, "Casting A Shadow"
+Visit Julianna
+
+Load Save
 
 Week 13: Internal Affairs, Foreign Intelligence
 Execute her
