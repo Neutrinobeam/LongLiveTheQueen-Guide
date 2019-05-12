@@ -1,6 +1,4 @@
-Checklist Unlocks:
-"Illuminate!", "Family is No Defense", "A Little Backup", "A Dangerous Juggler", "For the Good of Nova", 
-"Keep Your Friends Close", "A Promise Discarded", "Off with Their Heads"
+"Illuminate!", "Family is No Defense", "A Little Backup", "A Dangerous Juggler", "For the Good of Nova", "Keep Your Friends Close", "A Promise Discarded", "Off with Their Heads", "Long Live The Queen"
 
 Week 1: Morning Classes: Accounting, Afternoon Classes: Accounting
 Weekend: Play with Toys
@@ -140,4 +138,14 @@ Week 37: Morning Classes: *, Afternoon Classes: *
 Reject, Execute, "Off with Their Heads"
 Weekend *
 
+Week 38: Morning Classes: *, Afternoon Classes: *
+*, *
+Weekend: *
+
+Week 39: Morning Classes: *, Afternoon Classes: *
+*, *
+Weekend: *
+
+Week 40: Morning Classes: *, Afternoon Classes: *
+"Long Live The Queen"
 Epilogue Windows 3, 13, 20, 22, 24
