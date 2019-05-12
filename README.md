@@ -64,7 +64,7 @@ In the above example, if conditions A, B, and C are all true, expressions 1 and 
 
 Operations within Conditionals
 - Boolean: not, or, and
-- Numerical: <, >, <=, >=, +
+- Numerical: <, >, <=, >=, +, *
 
 Menus
 
@@ -94,7 +94,7 @@ Deaths and other early endings are paired with specific elements "Ending: Death"
 
 Epilogue Windows
 
-Epilogue windows are given by Window number, undecorated. These appear during the epilogue (Week 40) or after a "Ending: Generic" or "Ending: Evil"
+Epilogue windows are given by 'Window number', undecorated. These appear during the epilogue (Week 40) or after a "Ending: Generic" or "Ending: Evil"
 
 Pseudocode
 
