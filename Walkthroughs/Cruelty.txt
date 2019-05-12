@@ -1,8 +1,7 @@
-Checklist Unlocks
 Guaranteed
 "Illuminate!", "A Dangerous Juggler", "Make It Look Like An Accident", "An Ex Chicken", "A Gauntlet Thrown"
 Options
- "Plunged into the Depths", "A Military Alliance", "To Serve Evil", "Blow Yourself Up"", "Fault Lines"
+ "Plunged into the Depths", "A Military Alliance", "To Serve Evil", "Blow Yourself Up"", "Fault Lines", "The Needs of the Many", "An Unexpected Pairing"
 
 Week 1: Internal Affairs, Foreign Intelligence
 Charlotte
@@ -111,7 +110,7 @@ Treasury
 Week 28: Conversation Outfit, Internal Affairs, Ciphering
 Attend Court
 
-Week 29: *, * Avoid training magic if going for "Blow Yourself Up"
+Week 29: *, *
 Treasury
 
 Week 30: Foreign Intelligence, Ciphering
@@ -150,7 +149,7 @@ Week 36: *, *
 Week 37: *, *
 Ask about Charlotte's powers
 Execute Lucille and Laurent
-Sacrifice Charlotte
+Sacrifice Charlotte, "The Needs of the Many"
 *
 
 Week 38: *, *
@@ -162,6 +161,7 @@ No one
 *
 
 Week 40: *, *
+"An Unexpected Pairing"
 
 
 'To Serve Evil'
@@ -179,7 +179,7 @@ Offer to give him your power
 Do it, "To Serve Evil"
 
 
-'Earthquake' or 'Blow Yourself Up'
+'Earthquake' or 'Blown Yourself Up'
 Week 34: *, *
 Don't
 Stay in the capital
@@ -189,7 +189,7 @@ Week 35: *, *
 "A Military Alliance"
 *
 
-Week 36: Lumen Outfit (If not doing "Blow Yourself Up"")
+Week 36: Lumen Outfit (If not doing "Blown Yourself Up"")
 *, *
 Refuse outright
 Advisors
