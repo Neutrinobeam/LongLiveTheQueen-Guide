@@ -1,0 +1,31 @@
+body {
+	background-color: black;
+	color: ghostwhite;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	}
+
+.flexfix {
+	align-self: center;
+	}
+
+span {
+	margin: 0 0.5em;
+	padding: 0 0.5em;
+}
+
+.unlock {
+	background-color: aquamarine;
+	color: black;
+}
+
+.death {
+	background-color: firebrick;
+	color: black;
+}
+
+.loss {
+	background-color: darkorange;
+	color: black;
+}
