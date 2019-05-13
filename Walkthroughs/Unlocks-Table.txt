@@ -1,0 +1,129 @@
+
+A Dangerous Juggler
+	Cruelty, Most-Rare, Mundane-Military, Noble-Challengers
+
+A Divine Omen
+	Powerful-Women
+
+A Gathering Of Light
+	Powerful-Women
+
+A Gauntlet Thrown
+	Cruelty
+
+A Hostage to Fortune
+	Mundane-Military, Noble-Challengers
+
+A Land Divided
+	Noble-Challengers
+
+A Little Backup
+	Hidden-Things, Most-Rare, Powerful-Women
+
+A Matter of Honor
+	Noble-Challengers
+
+A Military Alliance
+	Cruelty
+
+A Mysterious Artifact
+	Hidden-Things
+
+A Promise Discarded
+	Hidden-Things, Most-Rare
+
+A Timely Word
+	Noble-Challengers
+
+A Trial of Your Peers
+	Noble-Challengers
+
+An Ex Chicken
+	Cruelty
+
+An Unexpected Pairing
+	Cruelty
+
+Angel of Music
+	Noble-Challengers
+
+Better Left Unsaid
+	Powerful-Women
+
+Blow Yourself Up
+	Cruelty
+
+Casting A Shadow
+	Powerful-Women
+
+Facing Facts
+	Noble-Challengers
+
+Family is No Defense
+	Most-Rare
+
+Fault Lines
+	Cruelty
+
+For the Good of Nova
+	Most-Rare
+
+Illuminate!
+	Cruelty, Most-Rare, Powerful-Women
+
+Interpersonal Diplomacy
+	Hidden-Things
+
+Keep Your Friends Close
+	Most-Rare
+
+Long Live The Queen
+	Cruelty, Hidden-Things, Most-Rare, Mundane-Military, Noble-Challengers, Powerful-Women
+
+Make It Look Like An Accident
+	Cruelty
+
+No Other Rulers Before Me
+	Hidden-Things
+
+Off With Their Heads
+	Hidden-Things, Most-Rare, Mundane-Military, Noble-Challengers
+
+Plunged into the Depths
+	Cruelty, Powerful-Women
+
+Rebellious Province
+	Mundane-Military
+
+Shared Power Increased
+	Powerful-Women
+
+The Language Of Flowers
+	Powerful-Women
+
+The Needs of the Many
+	Cruelty
+
+The Price of Blood
+	Mundane-Military
+
+The Will Of The People
+	Powerful-Women
+
+There And Back Again
+	Powerful-Women
+
+Things That Go Bump In The Night
+	Powerful-Women
+
+To Serve Evil
+	Cruelty
+
+Victory At Sea
+	Mundane-Military
+
+You Do If I Say You Do
+	Hidden-Things
+
+Youth's First Kiss
+	Mundane-Military
